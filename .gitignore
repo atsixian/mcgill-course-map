@@ -1,0 +1,6 @@
+### VisualStudioCode ###
+.vscode/*
+*.json
+__pycache__/
+attempts.py
+course_data/
