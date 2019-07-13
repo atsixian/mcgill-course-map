@@ -1,0 +1,7 @@
+{"name": "MICR 773 Advanced Environmental Microbiology (3 credits)", "term": "Winter 2020", "link": "https://mcgill.ca/study/2019-2020/courses/micr-773", "subject": "MICR"}
+{"name": "MICR 772 Molecular Microbiology (3 credits)", "term": "This course is not scheduled for the 2019-2020 academic year.", "link": "https://mcgill.ca/study/2019-2020/courses/micr-772", "subject": "MICR"}
+{"name": "MICR 450 Environmental Microbiology (3 credits)", "prereq": ["micr-230", "lsci-230"], "term": "This course is not scheduled for the 2019-2020 academic year.", "link": "https://mcgill.ca/study/2019-2020/courses/micr-450", "subject": "MICR"}
+{"name": "MICR 331 Microbial Ecology (3 credits)", "prereq": ["lsci-204", "lsci-230", "aebi-212", "envr-202"], "term": "Winter 2020", "link": "https://mcgill.ca/study/2019-2020/courses/micr-331", "subject": "MICR"}
+{"name": "MICR 341 Mechanisms of Pathogenicity (3 credits)", "prereq": ["micr-230", "lsci-230"], "term": "Fall 2019", "link": "https://mcgill.ca/study/2019-2020/courses/micr-341", "subject": "MICR"}
+{"name": "MICR 338 Bacterial Molecular Genetics (3 credits)", "prereq": ["lsci-211", "lsci-230", "lsci-204"], "term": "This course is not scheduled for the 2019-2020 academic year.", "link": "https://mcgill.ca/study/2019-2020/courses/micr-338", "subject": "MICR"}
+{"name": "MICR 300 Microbial Physiology Laboratory (3 credits)", "prereq": ["micr-230", "lsci-230"], "term": "This course is not scheduled for the 2019-2020 academic year.", "link": "https://mcgill.ca/study/2019-2020/courses/micr-300", "subject": "MICR"}

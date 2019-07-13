@@ -1,0 +1,8 @@
+{"name": "REDM 511 Advanced Museum-Based Science (3 credits)", "prereq": ["redm-400"], "term": "This course is not scheduled for the 2019-2020 academic year.", "link": "https://mcgill.ca/study/2019-2020/courses/redm-511", "subject": "REDM"}
+{"name": "REDM 410 Writing Research Articles (3 credits)", "term": "This course is not scheduled for the 2019-2020 academic year.", "link": "https://mcgill.ca/study/2019-2020/courses/redm-410", "subject": "REDM"}
+{"name": "REDM 405 Natural History of East Africa (3 credits)", "term": "Winter 2020", "link": "https://mcgill.ca/study/2019-2020/courses/redm-405", "subject": "REDM"}
+{"name": "REDM 710 Writing Science Articles 2 (3 credits)", "term": "This course is not scheduled for the 2019-2020 academic year.", "link": "https://mcgill.ca/study/2019-2020/courses/redm-710", "subject": "REDM"}
+{"name": "REDM 610 Writing Science Articles 1 (3 credits)", "term": "This course is not scheduled for the 2019-2020 academic year.", "link": "https://mcgill.ca/study/2019-2020/courses/redm-610", "subject": "REDM"}
+{"name": "REDM 396 Undergraduate Research Project (3 credits)", "term": "Fall 2019, Winter 2020", "link": "https://mcgill.ca/study/2019-2020/courses/redm-396", "subject": "REDM"}
+{"name": "REDM 399 Science Writing (1 credit)", "term": "This course is not scheduled for the 2019-2020 academic year.", "link": "https://mcgill.ca/study/2019-2020/courses/redm-399", "subject": "REDM"}
+{"name": "REDM 400 Science and Museums (3 credits)", "prereq": ["biol-215", "biol-305", "epsc-210", "epsc-233", "anth-208", "anth-310", "plnt-358", "wild-212", "wild-313"], "term": "Winter 2020", "link": "https://mcgill.ca/study/2019-2020/courses/redm-400", "subject": "REDM"}

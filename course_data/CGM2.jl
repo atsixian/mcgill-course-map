@@ -1,0 +1,5 @@
+{"name": "CGM2 590 Topics in Management (3 credits)", "prereq": ["cacc-520", "cfin-512", "cmr2-542"], "term": "This course is not scheduled for the 2019-2020 academic year.", "link": "https://mcgill.ca/study/2019-2020/courses/cgm2-590", "subject": "CGM2"}
+{"name": "CGM2 590D1 Topics in Management (1.5 credits)", "prereq": ["cacc-520", "cfin-512", "cmr2-542"], "term": "This course is not scheduled for the 2019-2020 academic year.", "link": "https://mcgill.ca/study/2019-2020/courses/cgm2-590d1", "subject": "CGM2"}
+{"name": "CGM2 590D2 Topics in Management (1.5 credits)", "prereq": ["cgm2-590d1"], "term": "This course is not scheduled for the 2019-2020 academic year.", "link": "https://mcgill.ca/study/2019-2020/courses/cgm2-590d2", "subject": "CGM2"}
+{"name": "CGM2 510 Project Management: Tools and Techniques (3 credits)", "term": "Fall 2019", "link": "https://mcgill.ca/study/2019-2020/courses/cgm2-510", "subject": "CGM2"}
+{"name": "CGM2 520 Sales Management and Negotiation Strategies (3 credits)", "term": "Fall 2019", "link": "https://mcgill.ca/study/2019-2020/courses/cgm2-520", "subject": "CGM2"}

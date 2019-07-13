@@ -1,0 +1,9 @@
+{"name": "CATH 460 Catholic Studies Seminar (3 credits)", "prereq": ["cath-200"], "term": "This course is not scheduled for the 2019-2020 academic year.", "link": "https://mcgill.ca/study/2019-2020/courses/cath-460", "subject": "CATH"}
+{"name": "CATH 370 Topics in Catholic Studies (3 credits)", "term": "Winter 2020", "link": "https://mcgill.ca/study/2019-2020/courses/cath-370", "subject": "CATH"}
+{"name": "CATH 325 Mystery and the Imagination (3 credits)", "term": "This course is not scheduled for the 2019-2020 academic year.", "link": "https://mcgill.ca/study/2019-2020/courses/cath-325", "subject": "CATH"}
+{"name": "CATH 315 Catholicism and Ethics (3 credits)", "prereq": ["cath-200"], "term": "This course is not scheduled for the 2019-2020 academic year.", "link": "https://mcgill.ca/study/2019-2020/courses/cath-315", "subject": "CATH"}
+{"name": "CATH 310 Catholic Intellectual Traditions (3 credits)", "prereq": ["cath-200", "relg-320"], "term": "This course is not scheduled for the 2019-2020 academic year.", "link": "https://mcgill.ca/study/2019-2020/courses/cath-310", "subject": "CATH"}
+{"name": "CATH 320 Catholicism and Modernity (3 credits)", "prereq": ["cath-200"], "term": "This course is not scheduled for the 2019-2020 academic year.", "link": "https://mcgill.ca/study/2019-2020/courses/cath-320", "subject": "CATH"}
+{"name": "CATH 340 Catholicism and Public Policy (3 credits)", "prereq": ["cath-200"], "term": "Winter 2020", "link": "https://mcgill.ca/study/2019-2020/courses/cath-340", "subject": "CATH"}
+{"name": "CATH 200 Introduction to Catholicism (3 credits)", "term": "Fall 2019", "link": "https://mcgill.ca/study/2019-2020/courses/cath-200", "subject": "CATH"}
+{"name": "CATH 330 Catholicism in a Global Context (3 credits)", "term": "This course is not scheduled for the 2019-2020 academic year.", "link": "https://mcgill.ca/study/2019-2020/courses/cath-330", "subject": "CATH"}

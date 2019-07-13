@@ -1,0 +1,36 @@
+{"name": "ANAT 458 Membranes and Cellular Signaling (3 credits)", "prereq": ["bioc-212", "anat-212", "biol-201", "anat-262", "phgy-209", "biol-205", "bioc-312", "anat-365", "bioc-311"], "term": "Winter 2020", "link": "https://mcgill.ca/study/2019-2020/courses/anat-458", "subject": "ANAT"}
+{"name": "ANAT 499 Supervised Library Research (1 credit)", "prereq": ["anat-262", "biol-202"], "term": "Fall 2019, Winter 2020", "link": "https://mcgill.ca/study/2019-2020/courses/anat-499", "subject": "ANAT"}
+{"name": "ANAT 432 Honours Research Project (9 credits)", "prereq": ["biol-301"], "term": "Fall 2019, Winter 2020", "link": "https://mcgill.ca/study/2019-2020/courses/anat-432", "subject": "ANAT"}
+{"name": "ANAT 432D1 Honours Research Project (4.5 credits)", "prereq": ["biol-301"], "term": "Fall 2019", "link": "https://mcgill.ca/study/2019-2020/courses/anat-432d1", "subject": "ANAT"}
+{"name": "ANAT 541 Cell and Molecular Biology of Aging (3 credits)", "prereq": ["anat-212", "bioc-212", "biol-201", "anat-261", "anat-262"], "term": "Winter 2020", "link": "https://mcgill.ca/study/2019-2020/courses/anat-541", "subject": "ANAT"}
+{"name": "ANAT 396 Undergraduate Research Project (3 credits)", "term": "Fall 2019, Winter 2020", "link": "https://mcgill.ca/study/2019-2020/courses/anat-396", "subject": "ANAT"}
+{"name": "ANAT 432D2 Honours Research Project (4.5 credits)", "prereq": ["anat-432d1"], "term": "Winter 2020", "link": "https://mcgill.ca/study/2019-2020/courses/anat-432d2", "subject": "ANAT"}
+{"name": "ANAT 416 Development, Disease and Regeneration (3 credits)", "prereq": ["anat-381", "biol-303"], "term": "Winter 2020", "link": "https://mcgill.ca/study/2019-2020/courses/anat-416", "subject": "ANAT"}
+{"name": "ANAT 323 Clinical Neuroanatomy (3 credits)", "prereq": ["anat-315", "anat-316", "anat-214", "anat-314"], "term": "Fall 2019", "link": "https://mcgill.ca/study/2019-2020/courses/anat-323", "subject": "ANAT"}
+{"name": "ANAT 365 Cellular Trafficking (3 credits)", "prereq": ["anat-261", "anat-262", "phgy-209"], "term": "Fall 2019", "link": "https://mcgill.ca/study/2019-2020/courses/anat-365", "subject": "ANAT"}
+{"name": "ANAT 381 Experimental Embryology (3 credits)", "prereq": ["anat-261", "biol-202"], "term": "Fall 2019", "link": "https://mcgill.ca/study/2019-2020/courses/anat-381", "subject": "ANAT"}
+{"name": "ANAT 698D2 M.Sc. Thesis Research 1 (12 credits)", "prereq": ["anat-698d1"], "term": "This course is not scheduled for the 2019-2020 academic year.", "link": "https://mcgill.ca/study/2019-2020/courses/anat-698d2", "subject": "ANAT"}
+{"name": "ANAT 322 Neuroendocrinology (3 credits)", "prereq": ["phgy-210"], "term": "Winter 2020", "link": "https://mcgill.ca/study/2019-2020/courses/anat-322", "subject": "ANAT"}
+{"name": "ANAT 701D2 Ph.D. Comprehensive Examination", "prereq": ["anat-701d1"], "term": "This course is not scheduled for the 2019-2020 academic year.", "link": "https://mcgill.ca/study/2019-2020/courses/anat-701d2", "subject": "ANAT"}
+{"name": "ANAT 697 Seminars in Cell Biology 3 (3 credits)", "prereq": ["anat-695", "anat-696"], "term": "Fall 2019, Winter 2020", "link": "https://mcgill.ca/study/2019-2020/courses/anat-697", "subject": "ANAT"}
+{"name": "ANAT 701 Ph.D. Comprehensive Examination", "term": "Fall 2019, Winter 2020", "link": "https://mcgill.ca/study/2019-2020/courses/anat-701", "subject": "ANAT"}
+{"name": "ANAT 698D1 M.Sc. Thesis Research 1 (12 credits)", "term": "This course is not scheduled for the 2019-2020 academic year.", "link": "https://mcgill.ca/study/2019-2020/courses/anat-698d1", "subject": "ANAT"}
+{"name": "ANAT 698 M.Sc. Thesis Research 1 (24 credits)", "term": "Fall 2019, Winter 2020", "link": "https://mcgill.ca/study/2019-2020/courses/anat-698", "subject": "ANAT"}
+{"name": "ANAT 701D1 Ph.D. Comprehensive Examination", "term": "This course is not scheduled for the 2019-2020 academic year.", "link": "https://mcgill.ca/study/2019-2020/courses/anat-701d1", "subject": "ANAT"}
+{"name": "ANAT 696 Seminars in Cell Biology 2 (3 credits)", "prereq": ["anat-695"], "term": "Fall 2019, Winter 2020", "link": "https://mcgill.ca/study/2019-2020/courses/anat-696", "subject": "ANAT"}
+{"name": "ANAT 690D1 Cell and Developmental Biology (3 credits)", "term": "Fall 2019", "link": "https://mcgill.ca/study/2019-2020/courses/anat-690d1", "subject": "ANAT"}
+{"name": "ANAT 663D2 Histology (3 credits)", "prereq": ["anat-663d1"], "term": "This course is not scheduled for the 2019-2020 academic year.", "link": "https://mcgill.ca/study/2019-2020/courses/anat-663d2", "subject": "ANAT"}
+{"name": "ANAT 695 Seminars in Cell Biology 1 (3 credits)", "term": "Fall 2019, Winter 2020", "link": "https://mcgill.ca/study/2019-2020/courses/anat-695", "subject": "ANAT"}
+{"name": "ANAT 601 MSc Seminar Examination (3 credits)", "term": "Fall 2019, Winter 2020", "link": "https://mcgill.ca/study/2019-2020/courses/anat-601", "subject": "ANAT"}
+{"name": "ANAT 690D2 Cell and Developmental Biology (3 credits)", "prereq": ["anat-690d1"], "term": "Winter 2020", "link": "https://mcgill.ca/study/2019-2020/courses/anat-690d2", "subject": "ANAT"}
+{"name": "ANAT 565 Diseases-Membrane Trafficking (3 credits)", "prereq": ["anat-365"], "term": "Winter 2020", "link": "https://mcgill.ca/study/2019-2020/courses/anat-565", "subject": "ANAT"}
+{"name": "ANAT 542 Transmission Electron Microscopy (3 credits)", "term": "Winter 2020", "link": "https://mcgill.ca/study/2019-2020/courses/anat-542", "subject": "ANAT"}
+{"name": "ANAT 321 Circuitry of the Human Brain (3 credits)", "prereq": ["bioc-212", "biol-201", "phgy-209", "nsci-200", "psyc-211"], "term": "Fall 2019", "link": "https://mcgill.ca/study/2019-2020/courses/anat-321", "subject": "ANAT"}
+{"name": "ANAT 663D1 Histology (3 credits)", "term": "This course is not scheduled for the 2019-2020 academic year.", "link": "https://mcgill.ca/study/2019-2020/courses/anat-663d1", "subject": "ANAT"}
+{"name": "ANAT 315 Clinical Human Musculoskeletal Anatomy (3 credits)", "term": "Fall 2019", "link": "https://mcgill.ca/study/2019-2020/courses/anat-315", "subject": "ANAT"}
+{"name": "ANAT 316 Clinical Human Visceral Anatomy\r (3 credits)", "prereq": ["anat-315"], "term": "Winter 2020", "link": "https://mcgill.ca/study/2019-2020/courses/anat-316", "subject": "ANAT"}
+{"name": "ANAT 261 Introduction to Dynamic Histology (4 credits)", "prereq": ["biol-112"], "term": "Fall 2019", "link": "https://mcgill.ca/study/2019-2020/courses/anat-261", "subject": "ANAT"}
+{"name": "ANAT 262 Introductory Molecular and Cell Biology (3 credits)", "term": "Winter 2020", "link": "https://mcgill.ca/study/2019-2020/courses/anat-262", "subject": "ANAT"}
+{"name": "ANAT 314 Human Musculoskeletal Anatomy\r (3 credits)", "prereq": ["anat-214"], "term": "Winter 2020", "link": "https://mcgill.ca/study/2019-2020/courses/anat-314", "subject": "ANAT"}
+{"name": "ANAT 214 Systemic Human Anatomy (3 credits)", "prereq": ["biol-112", "phgy-209", "phgy-210"], "term": "Fall 2019", "link": "https://mcgill.ca/study/2019-2020/courses/anat-214", "subject": "ANAT"}
+{"name": "ANAT 212 Molecular Mechanisms of Cell Function (3 credits)", "prereq": ["biol-200"], "term": "Winter 2020", "link": "https://mcgill.ca/study/2019-2020/courses/anat-212", "subject": "ANAT"}

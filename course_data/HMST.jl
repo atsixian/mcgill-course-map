@@ -1,0 +1,2 @@
+{"name": "HMST 297 Western Humanistic Tradition 2 (3 credits)", "prereq": ["hmst-296"], "term": "This course is not scheduled for the 2019-2020 academic year.", "link": "https://mcgill.ca/study/2019-2020/courses/hmst-297", "subject": "HMST"}
+{"name": "HMST 296 Western Humanistic Tradition 1 (3 credits)", "term": "This course is not scheduled for the 2019-2020 academic year.", "link": "https://mcgill.ca/study/2019-2020/courses/hmst-296", "subject": "HMST"}

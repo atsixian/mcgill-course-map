@@ -1,0 +1,1 @@
+{"name": "CINC 200 Intercultural Civic Engagement/Service-Learning (3 credits)", "prereq": ["ceen-331", "ceen-332"], "term": "Fall 2019", "link": "https://mcgill.ca/study/2019-2020/courses/cinc-200", "subject": "CINC"}

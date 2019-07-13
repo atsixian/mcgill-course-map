@@ -1,0 +1,3 @@
+{"name": "RETL 434 Topics in Retail Management (3 credits)", "prereq": ["mgcr-352"], "term": "This course is not scheduled for the 2019-2020 academic year.", "link": "https://mcgill.ca/study/2019-2020/courses/retl-434", "subject": "RETL"}
+{"name": "RETL 407 Retail Management Project (3 credits)", "prereq": ["mrkt-459", "retl-402"], "term": "Winter 2020", "link": "https://mcgill.ca/study/2019-2020/courses/retl-407", "subject": "RETL"}
+{"name": "RETL 402 Innovations in Retailing (3 credits)", "prereq": ["mgcr-352"], "term": "Fall 2019, Winter 2020", "link": "https://mcgill.ca/study/2019-2020/courses/retl-402", "subject": "RETL"}

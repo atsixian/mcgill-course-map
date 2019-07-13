@@ -1,0 +1,85 @@
+{"name": "EDPC 665D1 Practicum (3 credits)", "term": "Fall 2019", "link": "https://mcgill.ca/study/2019-2020/courses/edpc-665d1", "subject": "EDPC"}
+{"name": "EDPC 662 Career Psychology (3 credits)", "term": "Fall 2019", "link": "https://mcgill.ca/study/2019-2020/courses/edpc-662", "subject": "EDPC"}
+{"name": "EDPC 665D2 Practicum (3 credits)", "prereq": ["edpc-665d1"], "term": "Winter 2020", "link": "https://mcgill.ca/study/2019-2020/courses/edpc-665d2", "subject": "EDPC"}
+{"name": "EDPC 670 Current Trends in Counselling (3 credits)", "term": "This course is not scheduled for the 2019-2020 academic year.", "link": "https://mcgill.ca/study/2019-2020/courses/edpc-670", "subject": "EDPC"}
+{"name": "EDPC 630 Research Project 6 (3 credits)", "term": "Fall 2019, Winter 2020", "link": "https://mcgill.ca/study/2019-2020/courses/edpc-630", "subject": "EDPC"}
+{"name": "EDPC 629 Research Project 5 (3 credits)", "term": "Fall 2019, Winter 2020", "link": "https://mcgill.ca/study/2019-2020/courses/edpc-629", "subject": "EDPC"}
+{"name": "EDPC 699 Thesis Preparation 3 (12 credits)", "term": "This course is not scheduled for the 2019-2020 academic year.", "link": "https://mcgill.ca/study/2019-2020/courses/edpc-699", "subject": "EDPC"}
+{"name": "EDPC 698 Thesis Preparation 2 (6 credits)", "term": "This course is not scheduled for the 2019-2020 academic year.", "link": "https://mcgill.ca/study/2019-2020/courses/edpc-698", "subject": "EDPC"}
+{"name": "EDPC 697 Thesis Preparation 1 (6 credits)", "term": "This course is not scheduled for the 2019-2020 academic year.", "link": "https://mcgill.ca/study/2019-2020/courses/edpc-697", "subject": "EDPC"}
+{"name": "EDPC 786 Proposal Preparation and Defense (6 credits)", "prereq": ["edpc-697", "edpc-698", "edpc-699"], "term": "Fall 2019, Winter 2020", "link": "https://mcgill.ca/study/2019-2020/courses/edpc-786", "subject": "EDPC"}
+{"name": "EDPC 784 Assessment Practicum (3 credits)", "term": "Fall 2019, Winter 2020", "link": "https://mcgill.ca/study/2019-2020/courses/edpc-784", "subject": "EDPC"}
+{"name": "EDPC 783 Doctoral Fieldwork 2 (3 credits)", "prereq": ["edpc-782", "edpc-782d1", "edpc-782d2"], "term": "Fall 2019, Winter 2020", "link": "https://mcgill.ca/study/2019-2020/courses/edpc-783", "subject": "EDPC"}
+{"name": "EDPC 795D2 Pre-doctoral Internship (12 credits)", "prereq": ["edpc-795d1"], "term": "Winter 2020", "link": "https://mcgill.ca/study/2019-2020/courses/edpc-795d2", "subject": "EDPC"}
+{"name": "EDPC 795D1 Pre-doctoral Internship (12 credits)", "term": "Fall 2019", "link": "https://mcgill.ca/study/2019-2020/courses/edpc-795d1", "subject": "EDPC"}
+{"name": "EDPC 786D2 Proposal Preparation and Defense (3 credits)", "prereq": ["edpc-786d1"], "term": "This course is not scheduled for the 2019-2020 academic year.", "link": "https://mcgill.ca/study/2019-2020/courses/edpc-786d2", "subject": "EDPC"}
+{"name": "EDPC 795 Pre-doctoral Internship (24 credits)", "term": "Fall 2019, Winter 2020", "link": "https://mcgill.ca/study/2019-2020/courses/edpc-795", "subject": "EDPC"}
+{"name": "EDPC 786D1 Proposal Preparation and Defense (3 credits)", "prereq": ["edpc-697", "edpc-698", "edpc-699"], "term": "This course is not scheduled for the 2019-2020 academic year.", "link": "https://mcgill.ca/study/2019-2020/courses/edpc-786d1", "subject": "EDPC"}
+{"name": "EDPC 782D1 Doctoral Field Experience (3 credits)", "term": "Fall 2019", "link": "https://mcgill.ca/study/2019-2020/courses/edpc-782d1", "subject": "EDPC"}
+{"name": "EDPC 780D1 Supervision (3 credits)", "prereq": ["edpc-625", "edpc-626", "edpc-782"], "term": "Fall 2019", "link": "https://mcgill.ca/study/2019-2020/courses/edpc-780d1", "subject": "EDPC"}
+{"name": "EDPC 780 Supervision (6 credits)", "prereq": ["edpc-625", "edpc-626", "edpc-782"], "term": "Fall 2019, Winter 2020", "link": "https://mcgill.ca/study/2019-2020/courses/edpc-780", "subject": "EDPC"}
+{"name": "EDPC 782D2 Doctoral Field Experience (3 credits)", "prereq": ["edpc-782d1"], "term": "Winter 2020", "link": "https://mcgill.ca/study/2019-2020/courses/edpc-782d2", "subject": "EDPC"}
+{"name": "EDPC 780D2 Supervision (3 credits)", "prereq": ["edpc-780d1"], "term": "Winter 2020", "link": "https://mcgill.ca/study/2019-2020/courses/edpc-780d2", "subject": "EDPC"}
+{"name": "EDPC 782 Doctoral Field Experience (6 credits)", "term": "Fall 2019, Winter 2020", "link": "https://mcgill.ca/study/2019-2020/courses/edpc-782", "subject": "EDPC"}
+{"name": "EDPC 770 Individual Reading Course (6 credits)", "term": "This course is not scheduled for the 2019-2020 academic year.", "link": "https://mcgill.ca/study/2019-2020/courses/edpc-770", "subject": "EDPC"}
+{"name": "EDPC 720D2 Consultation and Program Evaluation (1.5 credits)", "prereq": ["edpc-720d1"], "term": "This course is not scheduled for the 2019-2020 academic year.", "link": "https://mcgill.ca/study/2019-2020/courses/edpc-720d2", "subject": "EDPC"}
+{"name": "EDPC 720D1 Consultation and Program Evaluation (1.5 credits)", "prereq": ["edpc-662"], "term": "This course is not scheduled for the 2019-2020 academic year.", "link": "https://mcgill.ca/study/2019-2020/courses/edpc-720d1", "subject": "EDPC"}
+{"name": "EDPC 709 Advanced Theories and Models (3 credits)", "prereq": ["edpc-624"], "term": "This course is not scheduled for the 2019-2020 academic year.", "link": "https://mcgill.ca/study/2019-2020/courses/edpc-709", "subject": "EDPC"}
+{"name": "EDPC 719 Advanced Small Group Counselling (3 credits)", "prereq": ["edpc-709"], "term": "This course is not scheduled for the 2019-2020 academic year.", "link": "https://mcgill.ca/study/2019-2020/courses/edpc-719", "subject": "EDPC"}
+{"name": "EDPC 720 Consultation and Program Evaluation (3 credits)", "term": "Fall 2019", "link": "https://mcgill.ca/study/2019-2020/courses/edpc-720", "subject": "EDPC"}
+{"name": "EDPC 702 Assessment & Diagnosis 2 (3 credits)", "prereq": ["edpc-615"], "term": "Winter 2020", "link": "https://mcgill.ca/study/2019-2020/courses/edpc-702", "subject": "EDPC"}
+{"name": "EDPC 699D2 Thesis Preparation 3 (6 credits)", "prereq": ["edpc-699d1"], "term": "This course is not scheduled for the 2019-2020 academic year.", "link": "https://mcgill.ca/study/2019-2020/courses/edpc-699d2", "subject": "EDPC"}
+{"name": "EDPC 685D2 Internship: Vocational and Rehabilitation Counselling (3 credits)", "prereq": ["edpc-685d1"], "term": "Winter 2020", "link": "https://mcgill.ca/study/2019-2020/courses/edpc-685d2", "subject": "EDPC"}
+{"name": "EDPC 684 Practicum in Psychological Testing: Cognitive Assessment (3 credits)", "prereq": ["edpc-609"], "term": "Fall 2019, Winter 2020", "link": "https://mcgill.ca/study/2019-2020/courses/edpc-684", "subject": "EDPC"}
+{"name": "EDPC 685D1 Internship: Vocational and Rehabilitation Counselling (3 credits)", "term": "Fall 2019", "link": "https://mcgill.ca/study/2019-2020/courses/edpc-685d1", "subject": "EDPC"}
+{"name": "EDPC 714 Theory / Models: Family Therapy (3 credits)", "term": "Fall 2019", "link": "https://mcgill.ca/study/2019-2020/courses/edpc-714", "subject": "EDPC"}
+{"name": "EDPC 685 Internship: Vocational and Rehabilitation Counselling (6 credits)", "term": "Fall 2019, Winter 2020", "link": "https://mcgill.ca/study/2019-2020/courses/edpc-685", "subject": "EDPC"}
+{"name": "EDPC 683 Practicum in Psychological Testing: Personality Assessment (3 credits)", "prereq": ["edpc-609"], "term": "Fall 2019, Winter 2020", "link": "https://mcgill.ca/study/2019-2020/courses/edpc-683", "subject": "EDPC"}
+{"name": "EDPC 699D1 Thesis Preparation 3 (6 credits)", "term": "This course is not scheduled for the 2019-2020 academic year.", "link": "https://mcgill.ca/study/2019-2020/courses/edpc-699d1", "subject": "EDPC"}
+{"name": "EDPC 682N2 Practicum: Psychological Testing (3 credits)", "prereq": ["edpc-682n1"], "term": "This course is not scheduled for the 2019-2020 academic year.", "link": "https://mcgill.ca/study/2019-2020/courses/edpc-682n2", "subject": "EDPC"}
+{"name": "EDPC 682N1 Practicum: Psychological Testing (3 credits)", "term": "This course is not scheduled for the 2019-2020 academic year.", "link": "https://mcgill.ca/study/2019-2020/courses/edpc-682n1", "subject": "EDPC"}
+{"name": "EDPC 682 Practicum: Psychological Testing (6 credits)", "term": "This course is not scheduled for the 2019-2020 academic year.", "link": "https://mcgill.ca/study/2019-2020/courses/edpc-682", "subject": "EDPC"}
+{"name": "EDPC 682D2 Practicum: Psychological Testing (3 credits)", "prereq": ["edpc-682d1"], "term": "This course is not scheduled for the 2019-2020 academic year.", "link": "https://mcgill.ca/study/2019-2020/courses/edpc-682d2", "subject": "EDPC"}
+{"name": "EDPC 680D2 Internship Research Seminar (3 credits)", "prereq": ["edpc-680d1"], "term": "This course is not scheduled for the 2019-2020 academic year.", "link": "https://mcgill.ca/study/2019-2020/courses/edpc-680d2", "subject": "EDPC"}
+{"name": "EDPC 701 Comprehensive Examination", "term": "Fall 2019, Winter 2020", "link": "https://mcgill.ca/study/2019-2020/courses/edpc-701", "subject": "EDPC"}
+{"name": "EDPC 682D1 Practicum: Psychological Testing (3 credits)", "prereq": ["edpc-609"], "term": "This course is not scheduled for the 2019-2020 academic year.", "link": "https://mcgill.ca/study/2019-2020/courses/edpc-682d1", "subject": "EDPC"}
+{"name": "EDPC 679D1 Internship: General 1 (3 credits)", "term": "Fall 2019", "link": "https://mcgill.ca/study/2019-2020/courses/edpc-679d1", "subject": "EDPC"}
+{"name": "EDPC 679 Internship: General 1 (6 credits)", "term": "Fall 2019, Winter 2020", "link": "https://mcgill.ca/study/2019-2020/courses/edpc-679", "subject": "EDPC"}
+{"name": "EDPC 678 Internship Research Seminar: Qualitative Studies (3 credits)", "term": "Winter 2020", "link": "https://mcgill.ca/study/2019-2020/courses/edpc-678", "subject": "EDPC"}
+{"name": "EDPC 677 Internship Research Seminar: Quantitative Studies (3 credits)", "term": "Fall 2019", "link": "https://mcgill.ca/study/2019-2020/courses/edpc-677", "subject": "EDPC"}
+{"name": "EDPC 680D1 Internship Research Seminar (3 credits)", "term": "This course is not scheduled for the 2019-2020 academic year.", "link": "https://mcgill.ca/study/2019-2020/courses/edpc-680d1", "subject": "EDPC"}
+{"name": "EDPC 628 Research Project 4 (3 credits)", "term": "Fall 2019, Winter 2020", "link": "https://mcgill.ca/study/2019-2020/courses/edpc-628", "subject": "EDPC"}
+{"name": "EDPC 626 Clinic Practicum 2 (6 credits)", "prereq": ["edpc-625"], "term": "Winter 2020", "link": "https://mcgill.ca/study/2019-2020/courses/edpc-626", "subject": "EDPC"}
+{"name": "EDPC 625 Clinic Practicum 1 (6 credits)", "term": "Fall 2019", "link": "https://mcgill.ca/study/2019-2020/courses/edpc-625", "subject": "EDPC"}
+{"name": "EDPC 624 Group Counselling: Practice (3 credits)", "prereq": ["edpc-608"], "term": "This course is not scheduled for the 2019-2020 academic year.", "link": "https://mcgill.ca/study/2019-2020/courses/edpc-624", "subject": "EDPC"}
+{"name": "EDPC 621 Research Project 3 (3 credits)", "prereq": ["edpc-619", "edpc-620"], "term": "Fall 2019, Winter 2020", "link": "https://mcgill.ca/study/2019-2020/courses/edpc-621", "subject": "EDPC"}
+{"name": "EDPC 679D2 Internship: General 1 (3 credits)", "prereq": ["edpc-679d1"], "term": "Winter 2020", "link": "https://mcgill.ca/study/2019-2020/courses/edpc-679d2", "subject": "EDPC"}
+{"name": "EDPC 620 Research Project 2 (3 credits)", "prereq": ["edpc-619"], "term": "Fall 2019, Winter 2020", "link": "https://mcgill.ca/study/2019-2020/courses/edpc-620", "subject": "EDPC"}
+{"name": "EDPC 619 Research Project 1 (3 credits)", "term": "Fall 2019, Winter 2020", "link": "https://mcgill.ca/study/2019-2020/courses/edpc-619", "subject": "EDPC"}
+{"name": "EDPC 616 Individual Reading Course (3 credits)", "term": "Fall 2019", "link": "https://mcgill.ca/study/2019-2020/courses/edpc-616", "subject": "EDPC"}
+{"name": "EDPC 618 Professional Ethics and the Law (3 credits)", "term": "This course is not scheduled for the 2019-2020 academic year.", "link": "https://mcgill.ca/study/2019-2020/courses/edpc-618", "subject": "EDPC"}
+{"name": "EDPC 610 Psychological Testing 2 (3 credits)", "prereq": ["edpc-609"], "term": "This course is not scheduled for the 2019-2020 academic year.", "link": "https://mcgill.ca/study/2019-2020/courses/edpc-610", "subject": "EDPC"}
+{"name": "EDPC 615 Assessment and Diagnosis 1 (3 credits)", "term": "Fall 2019", "link": "https://mcgill.ca/study/2019-2020/courses/edpc-615", "subject": "EDPC"}
+{"name": "EDPC 608 Group Counselling: Theory (3 credits)", "term": "This course is not scheduled for the 2019-2020 academic year.", "link": "https://mcgill.ca/study/2019-2020/courses/edpc-608", "subject": "EDPC"}
+{"name": "EDPC 607 Theories of Counselling 2 (3 credits)", "prereq": ["edpc-606"], "term": "Winter 2020", "link": "https://mcgill.ca/study/2019-2020/courses/edpc-607", "subject": "EDPC"}
+{"name": "EDPC 609 Psychological Testing 1 (3 credits)", "term": "Winter 2020", "link": "https://mcgill.ca/study/2019-2020/courses/edpc-609", "subject": "EDPC"}
+{"name": "EDPC 562 Career as a Lifelong Process (3 credits)", "term": "Winter 2020", "link": "https://mcgill.ca/study/2019-2020/courses/edpc-562", "subject": "EDPC"}
+{"name": "EDPC 606 Theories of Intervention 1 (3 credits)", "term": "Fall 2019", "link": "https://mcgill.ca/study/2019-2020/courses/edpc-606", "subject": "EDPC"}
+{"name": "EDPC 542 Leadership and Support Roles of the Teacher (3 credits)", "term": "This course is not scheduled for the 2019-2020 academic year.", "link": "https://mcgill.ca/study/2019-2020/courses/edpc-542", "subject": "EDPC"}
+{"name": "EDPC 540 Social Responsibility and Relationships in Digital Age (3 credits)", "term": "Winter 2020", "link": "https://mcgill.ca/study/2019-2020/courses/edpc-540", "subject": "EDPC"}
+{"name": "EDPC 509 Individual Reading Course (3 credits)", "term": "Fall 2019", "link": "https://mcgill.ca/study/2019-2020/courses/edpc-509", "subject": "EDPC"}
+{"name": "EDPC 511 End of Life Care (3 credits)", "term": "This course is not scheduled for the 2019-2020 academic year.", "link": "https://mcgill.ca/study/2019-2020/courses/edpc-511", "subject": "EDPC"}
+{"name": "EDPC 508 Seminar in Special Topics (3 credits)", "term": "This course is not scheduled for the 2019-2020 academic year.", "link": "https://mcgill.ca/study/2019-2020/courses/edpc-508", "subject": "EDPC"}
+{"name": "EDPC 507 Advocacy, Outreach and\r Leadership (3 credits)", "term": "Winter 2020", "link": "https://mcgill.ca/study/2019-2020/courses/edpc-507", "subject": "EDPC"}
+{"name": "EDPC 504 Communication and Critical\r Conflict Resolution\r (3 credits)", "term": "Winter 2020", "link": "https://mcgill.ca/study/2019-2020/courses/edpc-504", "subject": "EDPC"}
+{"name": "EDPC 505 Crisis Intervention Processes (3 credits)", "term": "Fall 2019", "link": "https://mcgill.ca/study/2019-2020/courses/edpc-505", "subject": "EDPC"}
+{"name": "EDPC 501 Facilitating Relationships\r (3 credits)", "term": "Fall 2019", "link": "https://mcgill.ca/study/2019-2020/courses/edpc-501", "subject": "EDPC"}
+{"name": "EDPC 503 Intersectional Relationships and Sexualities (3 credits)", "term": "Fall 2019", "link": "https://mcgill.ca/study/2019-2020/courses/edpc-503", "subject": "EDPC"}
+{"name": "EDPC 210 Field Experience (3 credits)", "prereq": ["edpc-202"], "term": "This course is not scheduled for the 2019-2020 academic year.", "link": "https://mcgill.ca/study/2019-2020/courses/edpc-210", "subject": "EDPC"}
+{"name": "EDPC 203 Helping Skills Practicum 2 (3 credits)", "prereq": ["edpc-202"], "term": "This course is not scheduled for the 2019-2020 academic year.", "link": "https://mcgill.ca/study/2019-2020/courses/edpc-203", "subject": "EDPC"}
+{"name": "EDPC 205 Career/Occupational Development (3 credits)", "prereq": ["edpc-203"], "term": "This course is not scheduled for the 2019-2020 academic year.", "link": "https://mcgill.ca/study/2019-2020/courses/edpc-205", "subject": "EDPC"}
+{"name": "EDPC 502 Group Processes and Diversity (3 credits)", "term": "Fall 2019", "link": "https://mcgill.ca/study/2019-2020/courses/edpc-502", "subject": "EDPC"}
+{"name": "EDPC 202 Helping Skills Practicum 1 (3 credits)", "prereq": ["edpc-201"], "term": "This course is not scheduled for the 2019-2020 academic year.", "link": "https://mcgill.ca/study/2019-2020/courses/edpc-202", "subject": "EDPC"}
+{"name": "EDPC 201 Introduction to Student Advising (3 credits)", "term": "Fall 2019", "link": "https://mcgill.ca/study/2019-2020/courses/edpc-201", "subject": "EDPC"}
+{"name": "EDPC 208 Native Families' Dynamics (3 credits)", "prereq": ["edpc-203"], "term": "This course is not scheduled for the 2019-2020 academic year.", "link": "https://mcgill.ca/study/2019-2020/courses/edpc-208", "subject": "EDPC"}
+{"name": "EDPC 209 Basic Crisis Intervention Skills (3 credits)", "prereq": ["edpc-208"], "term": "This course is not scheduled for the 2019-2020 academic year.", "link": "https://mcgill.ca/study/2019-2020/courses/edpc-209", "subject": "EDPC"}

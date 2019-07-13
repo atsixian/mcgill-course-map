@@ -1,0 +1,7 @@
+{"name": "CPDV 400 Risks and Capital for Banks 1 (3 credits)", "prereq": ["cfin-300", "cmsc-221", "mgcr-341"], "term": "This course is not scheduled for the 2019-2020 academic year.", "link": "https://mcgill.ca/study/2019-2020/courses/cpdv-400", "subject": "CPDV"}
+{"name": "CPDV 402 Risks and Capital for Banks 2 (3 credits)", "prereq": ["cpdv-400"], "term": "This course is not scheduled for the 2019-2020 academic year.", "link": "https://mcgill.ca/study/2019-2020/courses/cpdv-402", "subject": "CPDV"}
+{"name": "CPDV 306 General Insurance 2 (3 credits)", "term": "This course is not scheduled for the 2019-2020 academic year.", "link": "https://mcgill.ca/study/2019-2020/courses/cpdv-306", "subject": "CPDV"}
+{"name": "CPDV 305 General Insurance 1 (3 credits)", "term": "This course is not scheduled for the 2019-2020 academic year.", "link": "https://mcgill.ca/study/2019-2020/courses/cpdv-305", "subject": "CPDV"}
+{"name": "CPDV 303 Risk Financing (3 credits)", "prereq": ["cpdv-301"], "term": "This course is not scheduled for the 2019-2020 academic year.", "link": "https://mcgill.ca/study/2019-2020/courses/cpdv-303", "subject": "CPDV"}
+{"name": "CPDV 302 Risk Control (3 credits)", "prereq": ["cpdv-301"], "term": "This course is not scheduled for the 2019-2020 academic year.", "link": "https://mcgill.ca/study/2019-2020/courses/cpdv-302", "subject": "CPDV"}
+{"name": "CPDV 301 Risk Management (3 credits)", "term": "This course is not scheduled for the 2019-2020 academic year.", "link": "https://mcgill.ca/study/2019-2020/courses/cpdv-301", "subject": "CPDV"}

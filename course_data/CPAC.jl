@@ -1,0 +1,2 @@
+{"name": "CPAC 101 Topics in Citizenship and Social Engagement (1 credit)", "term": "This course is not scheduled for the 2019-2020 academic year.", "link": "https://mcgill.ca/study/2019-2020/courses/cpac-101", "subject": "CPAC"}
+{"name": "CPAC 102 Topics in Volunteerism and Community Development (1 credit)", "term": "This course is not scheduled for the 2019-2020 academic year.", "link": "https://mcgill.ca/study/2019-2020/courses/cpac-102", "subject": "CPAC"}

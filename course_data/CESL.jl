@@ -1,0 +1,14 @@
+{"name": "CESL 690 Writing for Graduate Students (3 credits)", "term": "Fall 2019", "link": "https://mcgill.ca/study/2019-2020/courses/cesl-690", "subject": "CESL"}
+{"name": "CESL 660 Pronunciation: Independent Study", "prereq": ["cesl-650"], "term": "This course is not scheduled for the 2019-2020 academic year.", "link": "https://mcgill.ca/study/2019-2020/courses/cesl-660", "subject": "CESL"}
+{"name": "CESL 651 Pronunciation for Effective Communication (1 credit)", "term": "Fall 2019, Winter 2020", "link": "https://mcgill.ca/study/2019-2020/courses/cesl-651", "subject": "CESL"}
+{"name": "CESL 650 Pronunciation and Communication (3 credits)", "term": "This course is not scheduled for the 2019-2020 academic year.", "link": "https://mcgill.ca/study/2019-2020/courses/cesl-650", "subject": "CESL"}
+{"name": "CESL 525 ESL: Business and Professional Communication (3 credits)", "term": "This course is not scheduled for the 2019-2020 academic year.", "link": "https://mcgill.ca/study/2019-2020/courses/cesl-525", "subject": "CESL"}
+{"name": "CESL 299 ESL: Academic English Seminar (3 credits)", "term": "This course is not scheduled for the 2019-2020 academic year.", "link": "https://mcgill.ca/study/2019-2020/courses/cesl-299", "subject": "CESL"}
+{"name": "CESL 200 ESL: Academic English 1 (3 credits)", "term": "This course is not scheduled for the 2019-2020 academic year.", "link": "https://mcgill.ca/study/2019-2020/courses/cesl-200", "subject": "CESL"}
+{"name": "CESL 400 ESL: Essay & Critical Thinking (3 credits)", "prereq": ["cesl-300"], "term": "Fall 2019, Winter 2020", "link": "https://mcgill.ca/study/2019-2020/courses/cesl-400", "subject": "CESL"}
+{"name": "CESL 640 Fundamentals of Academic Writing for Graduate Students (3 credits)", "term": "This course is not scheduled for the 2019-2020 academic year.", "link": "https://mcgill.ca/study/2019-2020/courses/cesl-640", "subject": "CESL"}
+{"name": "CESL 631 Strategies for Academic Communication in English (1 credit)", "term": "Fall 2019, Winter 2020", "link": "https://mcgill.ca/study/2019-2020/courses/cesl-631", "subject": "CESL"}
+{"name": "CESL 500 ESL: Research Essay and Rhetoric (3 credits)", "prereq": ["cesl-400"], "term": "Fall 2019, Winter 2020", "link": "https://mcgill.ca/study/2019-2020/courses/cesl-500", "subject": "CESL"}
+{"name": "CESL 150 English as a Second Language (6 credits)", "term": "This course is not scheduled for the 2019-2020 academic year.", "link": "https://mcgill.ca/study/2019-2020/courses/cesl-150", "subject": "CESL"}
+{"name": "CESL 641 Fundamentals of Academic Writing in English (1 credit)", "term": "Fall 2019, Winter 2020", "link": "https://mcgill.ca/study/2019-2020/courses/cesl-641", "subject": "CESL"}
+{"name": "CESL 300 ESL: Academic English 2 (3 credits)", "prereq": ["cesl-200"], "term": "Fall 2019", "link": "https://mcgill.ca/study/2019-2020/courses/cesl-300", "subject": "CESL"}

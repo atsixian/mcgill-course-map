@@ -1,0 +1,3 @@
+{"name": "CCAU 520 External Auditing (3 credits)", "prereq": ["ccau-511"], "term": "This course is not scheduled for the 2019-2020 academic year.", "link": "https://mcgill.ca/study/2019-2020/courses/ccau-520", "subject": "CCAU"}
+{"name": "CCAU 525 Operational Auditing (3 credits)", "prereq": ["ccau-511"], "term": "This course is not scheduled for the 2019-2020 academic year.", "link": "https://mcgill.ca/study/2019-2020/courses/ccau-525", "subject": "CCAU"}
+{"name": "CCAU 511 Auditing 1 (3 credits)", "prereq": ["ccfc-512"], "term": "Fall 2019", "link": "https://mcgill.ca/study/2019-2020/courses/ccau-511", "subject": "CCAU"}

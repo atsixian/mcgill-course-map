@@ -1,0 +1,8 @@
+{"name": "CCLW 645 Taxation: Partnerships and Trusts (3 credits)", "term": "This course is not scheduled for the 2019-2020 academic year.", "link": "https://mcgill.ca/study/2019-2020/courses/cclw-645", "subject": "CCLW"}
+{"name": "CCLW 644 Corporate Reorganizations (3 credits)", "term": "This course is not scheduled for the 2019-2020 academic year.", "link": "https://mcgill.ca/study/2019-2020/courses/cclw-644", "subject": "CCLW"}
+{"name": "CCLW 643 U.S. Taxation (3 credits)", "term": "This course is not scheduled for the 2019-2020 academic year.", "link": "https://mcgill.ca/study/2019-2020/courses/cclw-643", "subject": "CCLW"}
+{"name": "CCLW 641 Taxation Research Methodology (3 credits)", "term": "This course is not scheduled for the 2019-2020 academic year.", "link": "https://mcgill.ca/study/2019-2020/courses/cclw-641", "subject": "CCLW"}
+{"name": "CCLW 205 Introduction to Business Law (3 credits)", "term": "Fall 2019", "link": "https://mcgill.ca/study/2019-2020/courses/cclw-205", "subject": "CCLW"}
+{"name": "CCLW 640 Tax Aspects of Litigation (3 credits)", "term": "This course is not scheduled for the 2019-2020 academic year.", "link": "https://mcgill.ca/study/2019-2020/courses/cclw-640", "subject": "CCLW"}
+{"name": "CCLW 511 Law 1 (3 credits)", "term": "Fall 2019", "link": "https://mcgill.ca/study/2019-2020/courses/cclw-511", "subject": "CCLW"}
+{"name": "CCLW 300 Public Administration and Law for Indigenous Peoples (3 credits)", "term": "This course is not scheduled for the 2019-2020 academic year.", "link": "https://mcgill.ca/study/2019-2020/courses/cclw-300", "subject": "CCLW"}

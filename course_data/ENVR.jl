@@ -1,0 +1,35 @@
+{"name": "ENVR 495D2 Honours Research (3 credits)", "prereq": ["envr-495d1"], "term": "Fall 2019, Winter 2020", "link": "https://mcgill.ca/study/2019-2020/courses/envr-495d2", "subject": "ENVR"}
+{"name": "ENVR 451 Research in Panama (6 credits)", "term": "Winter 2020", "link": "https://mcgill.ca/study/2019-2020/courses/envr-451", "subject": "ENVR"}
+{"name": "ENVR 490 Independent Study in Environment (3 credits)", "term": "Fall 2019, Winter 2020", "link": "https://mcgill.ca/study/2019-2020/courses/envr-490", "subject": "ENVR"}
+{"name": "ENVR 491 Independent Project in Environment (1 credit)", "term": "Fall 2019, Winter 2020", "link": "https://mcgill.ca/study/2019-2020/courses/envr-491", "subject": "ENVR"}
+{"name": "ENVR 495N1 Honours Research (3 credits)", "prereq": ["envr-301"], "term": "Fall 2019, Winter 2020", "link": "https://mcgill.ca/study/2019-2020/courses/envr-495n1", "subject": "ENVR"}
+{"name": "ENVR 422 Montreal Urban Sustainability Analysis (3 credits)", "prereq": ["envr-301"], "term": "This course is not scheduled for the 2019-2020 academic year.", "link": "https://mcgill.ca/study/2019-2020/courses/envr-422", "subject": "ENVR"}
+{"name": "ENVR 430 The Economics of Well-Being (3 credits)", "prereq": ["econ-230d1", "econ-230d2", "econ-250", "econ-227d1", "econ-227d2", "econ-257d1", "econ-257d2", "math-122", "math-139", "math-140", "math-150"], "term": "Fall 2019", "link": "https://mcgill.ca/study/2019-2020/courses/envr-430", "subject": "ENVR"}
+{"name": "ENVR 396 Undergraduate Research Project (3 credits)", "term": "This course is not scheduled for the 2019-2020 academic year.", "link": "https://mcgill.ca/study/2019-2020/courses/envr-396", "subject": "ENVR"}
+{"name": "ENVR 480 Topics in Environment 2 (3 credits)", "term": "This course is not scheduled for the 2019-2020 academic year.", "link": "https://mcgill.ca/study/2019-2020/courses/envr-480", "subject": "ENVR"}
+{"name": "ENVR 495N2 Honours Research (3 credits)", "prereq": ["envr-495n1"], "term": "Fall 2019, Winter 2020", "link": "https://mcgill.ca/study/2019-2020/courses/envr-495n2", "subject": "ENVR"}
+{"name": "ENVR 401 Environmental Research (3 credits)", "prereq": ["envr-301", "math-203"], "term": "Fall 2019", "link": "https://mcgill.ca/study/2019-2020/courses/envr-401", "subject": "ENVR"}
+{"name": "ENVR 485 Readings in Environment 1 (3 credits)", "term": "Fall 2019, Winter 2020", "link": "https://mcgill.ca/study/2019-2020/courses/envr-485", "subject": "ENVR"}
+{"name": "ENVR 400 Environmental Thought (3 credits)", "prereq": ["envr-203"], "term": "Fall 2019, Winter 2020", "link": "https://mcgill.ca/study/2019-2020/courses/envr-400", "subject": "ENVR"}
+{"name": "ENVR 380 Topics in Environment 1 (3 credits)", "term": "This course is not scheduled for the 2019-2020 academic year.", "link": "https://mcgill.ca/study/2019-2020/courses/envr-380", "subject": "ENVR"}
+{"name": "ENVR 421 Montreal: Environmental History and Sustainability (3 credits)", "prereq": ["envr-301"], "term": "This course is not scheduled for the 2019-2020 academic year.", "link": "https://mcgill.ca/study/2019-2020/courses/envr-421", "subject": "ENVR"}
+{"name": "ENVR 652 Environmental Seminar 3 (1 credit)", "prereq": ["envr-650"], "term": "This course is not scheduled for the 2019-2020 academic year.", "link": "https://mcgill.ca/study/2019-2020/courses/envr-652", "subject": "ENVR"}
+{"name": "ENVR 651 Environmental Seminar 2 (1 credit)", "term": "This course is not scheduled for the 2019-2020 academic year.", "link": "https://mcgill.ca/study/2019-2020/courses/envr-651", "subject": "ENVR"}
+{"name": "ENVR 615 Interdisciplinary Approach Environment and Sustainability (3 credits)", "term": "Fall 2019", "link": "https://mcgill.ca/study/2019-2020/courses/envr-615", "subject": "ENVR"}
+{"name": "ENVR 630 Civilization and Environment (3 credits)", "term": "Fall 2019", "link": "https://mcgill.ca/study/2019-2020/courses/envr-630", "subject": "ENVR"}
+{"name": "ENVR 495D1 Honours Research (3 credits)", "prereq": ["envr-301"], "term": "Fall 2019, Winter 2020", "link": "https://mcgill.ca/study/2019-2020/courses/envr-495d1", "subject": "ENVR"}
+{"name": "ENVR 614 Mobilizing Research for Sustainability (3 credits)", "term": "Winter 2020", "link": "https://mcgill.ca/study/2019-2020/courses/envr-614", "subject": "ENVR"}
+{"name": "ENVR 610 Foundations of Environmental Policy (3 credits)", "term": "Fall 2019, Winter 2020", "link": "https://mcgill.ca/study/2019-2020/courses/envr-610", "subject": "ENVR"}
+{"name": "ENVR 680 Topics in Environment 4 (3 credits)", "term": "This course is not scheduled for the 2019-2020 academic year.", "link": "https://mcgill.ca/study/2019-2020/courses/envr-680", "subject": "ENVR"}
+{"name": "ENVR 585 Readings in Environment 2 (3 credits)", "prereq": ["envr-400", "envr-401"], "term": "Fall 2019, Winter 2020", "link": "https://mcgill.ca/study/2019-2020/courses/envr-585", "subject": "ENVR"}
+{"name": "ENVR 540 Ecology of Species Invasions (3 credits)", "prereq": ["biol-215", "envr-200", "envr-202"], "term": "Winter 2020", "link": "https://mcgill.ca/study/2019-2020/courses/envr-540", "subject": "ENVR"}
+{"name": "ENVR 519 Global Environmental Politics (3 credits)", "prereq": ["envr-201", "envr-203"], "term": "This course is not scheduled for the 2019-2020 academic year.", "link": "https://mcgill.ca/study/2019-2020/courses/envr-519", "subject": "ENVR"}
+{"name": "ENVR 620 Environment and Health of Species (3 credits)", "term": "This course is not scheduled for the 2019-2020 academic year.", "link": "https://mcgill.ca/study/2019-2020/courses/envr-620", "subject": "ENVR"}
+{"name": "ENVR 650 Environmental Seminar 1 (1 credit)", "term": "This course is not scheduled for the 2019-2020 academic year.", "link": "https://mcgill.ca/study/2019-2020/courses/envr-650", "subject": "ENVR"}
+{"name": "ENVR 544 Environmental Measurement and Modelling (3 credits)", "prereq": ["nrsc-430", "geog-201", "urbp-505"], "term": "This course is not scheduled for the 2019-2020 academic year.", "link": "https://mcgill.ca/study/2019-2020/courses/envr-544", "subject": "ENVR"}
+{"name": "ENVR 203 Knowledge, Ethics and Environment (3 credits)", "term": "Fall 2019, Winter 2020", "link": "https://mcgill.ca/study/2019-2020/courses/envr-203", "subject": "ENVR"}
+{"name": "ENVR 201 Society, Environment and Sustainability (3 credits)", "term": "Fall 2019", "link": "https://mcgill.ca/study/2019-2020/courses/envr-201", "subject": "ENVR"}
+{"name": "ENVR 202 The Evolving Earth (3 credits)", "term": "Winter 2020", "link": "https://mcgill.ca/study/2019-2020/courses/envr-202", "subject": "ENVR"}
+{"name": "ENVR 622 Sustainable Landscapes (3 credits)", "term": "This course is not scheduled for the 2019-2020 academic year.", "link": "https://mcgill.ca/study/2019-2020/courses/envr-622", "subject": "ENVR"}
+{"name": "ENVR 301 Environmental Research Design (3 credits)", "term": "Fall 2019, Winter 2020", "link": "https://mcgill.ca/study/2019-2020/courses/envr-301", "subject": "ENVR"}
+{"name": "ENVR 200 The Global Environment (3 credits)", "term": "Fall 2019", "link": "https://mcgill.ca/study/2019-2020/courses/envr-200", "subject": "ENVR"}
