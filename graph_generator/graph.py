@@ -12,8 +12,6 @@ currentdir = Path(__file__).parent
 targetpath = currentdir.parent.joinpath('course_data')
 files = targetpath.iterdir()
 
-print(currentdir)
-
 all_courses = currentdir.joinpath('all_courses.jl')
 
 

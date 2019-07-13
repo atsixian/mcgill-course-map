@@ -299,9 +299,9 @@ guide_content=dcc.Markdown(
     """
 )
 
-starlink = html.A(" Star", href="https://github.com/Deerhound579/map-of-courses-at-McGill",
+starlink = html.A(" Star", href="https://github.com/Deerhound579/mcgill-course-map",
                   target='_blank', style={'color': 'black'}, id='star')
-issueslink = html.A(" Issues", href="https://github.com/Deerhound579/map-of-courses-at-McGill/issues",
+issueslink = html.A(" Issues", href="https://github.com/Deerhound579/mcgill-course-map/issues",
                     target='_blank', style={'color': 'black'}, id='issues')
 
 minimap_content = [
