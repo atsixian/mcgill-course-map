@@ -23,7 +23,7 @@ app = dash.Dash(__name__, external_stylesheets=[
                 dbc.themes.CYBORG, "https://use.fontawesome.com/releases/v5.7.0/css/all.css"])
 app.config.suppress_callback_exceptions = True
 app.scripts.config.serve_locally=True
-
+server = app.server
 def get_list(file):
     with open(file, 'r') as f:
         reader = csv.reader(f)
