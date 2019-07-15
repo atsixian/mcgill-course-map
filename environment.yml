@@ -1,5 +1,6 @@
 name: mspider
 channels:
+  - conda-forge
   - defaults
 dependencies:
   - appdirs=1.4.3=py37h28b3542_0
@@ -8,7 +9,7 @@ dependencies:
   - attrs=19.1.0=py37_1
   - automat=0.7.0=py37_0
   - bcrypt=3.1.6=py37he774522_0
-  - ca-certificates=2019.5.15=0
+  - ca-certificates=2019.6.16=hecc5488_0
   - certifi=2019.6.16=py37_0
   - cffi=1.12.3=py37h7a1dbc1_0
   - colorama=0.4.1=py37_0
@@ -24,7 +25,7 @@ dependencies:
   - libxslt=1.1.33=h579f668_0
   - lxml=4.3.4=py37h1350720_0
   - more-itertools=7.0.0=py37_0
-  - openssl=1.1.1c=he774522_1
+  - openssl=1.1.1c=hfa6e2cd_0
   - packaging=19.0=py37_0
   - parsel=1.5.1=py37_0
   - pip=19.1.1=py37_0
@@ -47,7 +48,7 @@ dependencies:
   - setuptools=41.0.1=py37_0
   - six=1.12.0=py37_0
   - sqlite=3.28.0=he774522_0
-  - twisted=19.2.0=py37he774522_0
+  - twisted=19.2.1=py37hfa6e2cd_0
   - vc=14.1=h0510ff6_4
   - vs2015_runtime=14.15.26706=h3a45250_4
   - w3lib=1.20.0=py37_0
