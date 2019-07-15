@@ -1,9 +1,4 @@
-
-# import sys
 from pathlib import Path
-
-# parentdir = str(Path(__file__).parent.parent)
-# sys.path.insert(0, parentdir)
 from graph_generator import graph
 
 import networkx as nx
@@ -46,10 +41,10 @@ radioitems = dbc.FormGroup(
         dbc.RadioItems(
             id='radio_items',
             options=[
+                {'label': 'Path by course', 'value': 'course'},
                 {'label': 'Overview by subject', 'value': 'overview'},
-                {'label': 'Path by course', 'value': 'course'}
             ],
-            value='overview',
+            value='course',
             style={
                 'fontSize': '20px',
                 'color': 'white'
@@ -263,7 +258,7 @@ course_path_graph=cyto.Cytoscape(
         'height': '650px',
     },
     zoom= 1.2,
-    minZoom= 0.5,
+    minZoom= 0.3,
     maxZoom= 1.5,
     stylesheet=course_path_stylesheet,
     elements=graph.get_elements(graph.learning_path('comp 302', graph.dfs_tree))
@@ -288,14 +283,17 @@ guide_content=dcc.Markdown(
     """
     * "Overview" shows all courses from the subject you search
     * "Path by course" shows which courses you can take after the course you search
-    ---
-    * The mini-map(only available in overview mode) on the left corner shows which courses are JUST after the one you click
-    * "Filter out courses from"(only available in path mode) let you focus on certain subjects
     * You can zoom in/out and drag nodes to change their positions inside the graph
+    ---
+    * Path mode:
+        * "Filters": Filter out subjects you want to ignore
+        * "Layout": Change the layout of nodes in the graph
+    * Overview mode:
+        * The mini-map(only available in overview mode) on the left corner shows which courses are JUST after the one you click
     ---
     For bugs/enhancements:
     * Create an issue on GitHub (preferred)
-    * Write me an email (please describe the problem clearly)
+    * Write me an email by clicking my name (please describe the problem clearly)
     """
 )
 
@@ -321,28 +319,62 @@ course_info_panel=[
     dbc.CardBody("Fall 2018, Winter 2019", id='course_info_body')
 ]
 
+# filter_dropdown = dcc.Dropdown(
+#     options=[
+#         {"label": "COMP", "value": 'COMP'},
+#         {"label": "ECSE", "value": 'ECSE'},
+#     ],
+#     multi=True,
+#     value=[],
+#     id='filter_list',
+# )
 
-filters = dbc.Card(
+filter_body = dbc.CardBody(
+    dcc.Dropdown(
+        options=[
+            {"label": "COMP", "value": 'COMP'},
+            {"label": "ECSE", "value": 'ECSE'},
+        ],
+        multi=True,
+        value=[],
+        id='filter_list'
+    )
+)
+
+layout_body=dbc.CardBody(
+    dcc.Dropdown(
+        id='layout_dropdown',
+        value='cose',
+        clearable=False,
+        options=[
+            {'label': name.capitalize(), 'value': name}
+            for name in ['grid', 'random', 'circle', 'cose', 'concentric']
+        ]
+    )
+)
+
+filters_layouts = dbc.Card(
     [
-        dbc.CardHeader("Filter out courses from:", id='filter_header'),
-        dbc.CardBody(
-            dcc.Dropdown(
-                options=[
-                    {"label": "COMP", "value": 'COMP'},
-                    {"label": "ECSE", "value": 'ECSE'},
+        dbc.CardHeader([
+            dbc.Tabs(
+                [
+                    dbc.Tab(filter_body, label="Filters", tab_id="filter_tab"),
+                    dbc.Tab(layout_body, label="Layout", tab_id="layout_tab"),
                 ],
-                multi=True,
-                value=[],
-                id='filter_list', 
-            ),
-        )
+                id="card_tabs",
+                active_tab="filter_tab",
+                card=True,
+                style={'color': '#FF8800'},
+            )
+            ],
+            id='filter_header'),
     ],
     color='warning',
     outline=True
 )
 
-filters_fade = dbc.Fade(
-    filters,
+filters_fade_card = dbc.Fade(
+    filters_layouts,
     id='filters_fade',
     is_in=False,
     appear=True
@@ -352,12 +384,10 @@ filters_fade = dbc.Fade(
 
 startip=dbc.Tooltip('Like it? Star it!',target='star')
 issuetip = dbc.Tooltip('Bugs? Enhancements?', target='issues')
-# minimaptip = dbc.Tooltip('The mini-map shows which courses are JUST after this one', target='radio_items')
-filtertip = dbc.Tooltip('Too many subjects? Ignore some', target='filter_header')
 
 navbar = dbc.NavbarSimple(
     children=[
-        startip, issuetip, filtertip,
+        startip, issuetip,
         message_display,
         message_display1,
         message_display2,
@@ -395,7 +425,7 @@ body = dbc.Container(
                         dbc.Card(id='left_corner_display', color="warning", outline=True),
                         html.Hr(),
                         # course_input_fade,
-                        filters_fade,
+                        filters_fade_card,
                         html.Div(children=[], id='filter_test')
                     ],
                     md=4,
@@ -530,6 +560,15 @@ def update_course_info_panel(node, cur_title, cur_href, cur_term):
         return infos[current_course]['name'], infos[current_course]['link'], infos[current_course]['term'], False, ' '
     except Exception as e:
         return cur_title, cur_href, cur_term, True, f"There's no course called {current_course}. "+error_message
+
+@app.callback(
+    Output('course_path_graph', 'layout'),
+    [
+        Input('layout_dropdown', 'value')
+    ]
+)
+def update_layout(cur_lay):
+    return {'name':cur_lay}
 
 if __name__ == '__main__':
     app.run_server(debug=True)

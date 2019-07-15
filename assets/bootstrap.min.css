@@ -3401,7 +3401,6 @@ fieldset:disabled a.btn {
     border-color: #FF8800 */
     color: #f6c783;
     border-color: #f6c783
-    
 }
 
 .btn-outline-warning:hover {
@@ -4790,7 +4789,8 @@ input[type="button"].btn-block {
 .nav-pills .nav-link.active,
 .nav-pills .show>.nav-link {
     color: #fff;
-    background-color: #2A9FD6
+    /* background-color: #2A9FD6 */
+    background-color: #171b26
 }
 
 .nav-fill .nav-item {
@@ -11864,7 +11864,8 @@ legend {
 
 .nav-tabs .nav-link.active,
 .nav-pills .nav-link.active {
-    background-color: #2A9FD6
+    /* background-color: #2A9FD6 */
+    background-color: #171b26
 }
 
 .breadcrumb a {
