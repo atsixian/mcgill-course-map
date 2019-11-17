@@ -444,6 +444,7 @@ body = dbc.Container(
 
 
 app.layout = html.Div([navbar, body])
+app.title = 'McGill Course Map'
 error_message = "Please double check.\nIf you're sure it exists, or you've found an invalid course, create an issue on GitHub or contact me by email(click my name on the navigation bar)."
 
 
