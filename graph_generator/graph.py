@@ -1,6 +1,5 @@
 import networkx as nx
 import jsonlines
-import matplotlib.pyplot as plt
 import warnings
 import re
 from pathlib import Path
