@@ -312,10 +312,10 @@ minimap_content = [
         ]
     ),
 ]
-
+view_detail = html.Img(src="https://img.icons8.com/dusk/30/000000/view-file.png")
 course_info_panel=[
     dbc.CardHeader(html.A("COMP 302 Programming Languages and Paradigms (3 credits)", target='_blank',
-                                id='course_info_title', href='https://www.mcgill.ca/study/2019-2020/courses/comp-302', style={'color': 'white'})),
+                                id='course_info_title', href='https://www.mcgill.ca/study/2019-2020/courses/comp-302', style={'color': 'white'}),view_detail),
     dbc.CardBody("Fall 2018, Winter 2019", id='course_info_body')
 ]
 
