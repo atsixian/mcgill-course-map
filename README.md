@@ -52,7 +52,10 @@ Author, link to the GitHub page, link to the GitHub issues page, and the detaile
 
 ### How to run this app locally
 
-Clone this repo, create a virtual environment, install all dependencies, and run `app.py`.
+1. `git clone https://github.com/Deerhound579/mcgill-course-map.git`
+2. Create a virtual environment with Python 3.7.3 or higher. I recommend following this [Pyenv tutorial](https://realpython.com/intro-to-pyenv/#using-the-pyenv-installer) to manage your Python versions and set up the env.
+3. `pip install -r requirements.txt` installs all dependencies
+4. `python app.py`
 
 ### License
 
