@@ -3,7 +3,6 @@ from graph_generator import graph
 
 import networkx as nx
 import plotly.graph_objs as go
-import plotly.plotly as py
 import dash_bootstrap_components as dbc
 import dash_html_components as html
 import dash_core_components as dcc
@@ -297,6 +296,7 @@ guide_content=dcc.Markdown(
     """
 )
 
+
 starlink = html.A(" Star", href="https://github.com/Deerhound579/mcgill-course-map",
                   target='_blank', style={'color': 'black'}, id='star')
 issueslink = html.A(" Issues", href="https://github.com/Deerhound579/mcgill-course-map/issues",
@@ -312,10 +312,11 @@ minimap_content = [
         ]
     ),
 ]
-view_detail = html.Img(src="https://img.icons8.com/dusk/30/000000/view-file.png")
+
+external_icon = html.I(className="fas fa-external-link-alt", style={})
+course_info = html.A("COMP 302 Programming Languages and Paradigms (3 credits)")
 course_info_panel=[
-    dbc.CardHeader(html.A("COMP 302 Programming Languages and Paradigms (3 credits)", target='_blank',
-                                id='course_info_title', href='https://www.mcgill.ca/study/2019-2020/courses/comp-302', style={'color': 'white'}),view_detail),
+    dbc.CardHeader(html.A([external_icon, course_info],target='_blank', id='course_info_title', href='https://www.mcgill.ca/study/2019-2020/courses/comp-302', style={'color': 'white'})),
     dbc.CardBody("Fall 2018, Winter 2019", id='course_info_body')
 ]
 
@@ -442,9 +443,8 @@ body = dbc.Container(
     className="md-12",
 )
 
-
-app.layout = html.Div([navbar, body])
 app.title = 'McGill Course Map'
+app.layout = html.Div([navbar, body])
 error_message = "Please double check.\nIf you're sure it exists, or you've found an invalid course, create an issue on GitHub or contact me by email(click my name on the navigation bar)."
 
 
@@ -558,7 +558,7 @@ def update_minimap(node, current_elements, cur_header, cur_href):
 def update_course_info_panel(node, cur_title, cur_href, cur_term):
     current_course = node['data']['id']
     try:
-        return infos[current_course]['name'], infos[current_course]['link'], infos[current_course]['term'], False, ' '
+        return [external_icon, infos[current_course]['name']], infos[current_course]['link'], infos[current_course]['term'], False, ' '
     except Exception as e:
         return cur_title, cur_href, cur_term, True, f"There's no course called {current_course}. "+error_message
 
