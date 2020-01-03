@@ -156,11 +156,14 @@ dfs_tree = partial(nx.dfs_tree, G=BIG_GRAPH)
 #         raise KeyError(
 #             f"There's no course called {course}.") from e
 
-def learning_path(course, search_method):
+def learning_path(course, search_method, show_prerequisites=False):
     code, number = split_course_name(course)
     try:
-        path = search_method(source=code.lower() + '\n' + number)
-        return path
+        if not show_prerequisites:
+            path = search_method(source=code.lower() + '\n' + number)
+            return path
+        else:
+            return get_prerequisite_graph(code.lower() + '\n' + number)
     except KeyError as e:
         raise KeyError(
             f"There's no course called {course}.") from e
@@ -174,3 +177,34 @@ def subjects_in_graph(G):
     for node in G.nodes:
         subjects.add(INFO_DICT[node]['subject'])
     return subjects
+
+
+def get_prerequisite_graph(query_course_code):
+    dependency_graph = nx.DiGraph()
+
+    dependency_graph.add_node(query_course_code)
+
+    prerequisites = list()
+
+    # A list of tuples in the form (course, prerequisite_of_the_course).
+    prerequisites_to_visit = list()
+    for prerequisite in list(BIG_GRAPH.predecessors(query_course_code)):
+        prerequisites_to_visit.append((query_course_code, prerequisite))
+
+    while len(prerequisites_to_visit) > 0:
+        required_course, prerequisite = prerequisites_to_visit.pop(-1)
+        if prerequisite not in prerequisites:
+            prerequisites.append(prerequisite)
+
+            if not dependency_graph.has_node(prerequisite):
+                dependency_graph.add_node(prerequisite)
+
+            # Add an edge from the prerequisite to a course that leads to the query.
+            dependency_graph.add_edge(prerequisite, required_course)
+            for super_prerequisite in list(BIG_GRAPH.predecessors(prerequisite)):
+                prerequisites_to_visit.append((prerequisite, super_prerequisite))
+
+    prerequisites.sort()
+    print(prerequisites)
+
+    return dependency_graph

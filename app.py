@@ -40,7 +40,8 @@ radioitems = dbc.FormGroup(
         dbc.RadioItems(
             id='radio_items',
             options=[
-                {'label': 'Path by course', 'value': 'course'},
+                {'label': 'What you can take after taking this course', 'value': 'course'},
+                {'label': 'Prerequisites that you need for this course', 'value': 'prerequisites'},
                 {'label': 'Overview by subject', 'value': 'overview'},
             ],
             value='course',
@@ -249,19 +250,22 @@ overview_graph = cyto.Cytoscape(
     elements=graph.big_picture('comp')
 )
 
-course_path_graph=cyto.Cytoscape(
-    id='course_path_graph',
-    layout={'name':'cose'},
-    style={
-        'width': '100%',
-        'height': '650px',
-    },
-    zoom= 1.2,
-    minZoom= 0.3,
-    maxZoom= 1.5,
-    stylesheet=course_path_stylesheet,
-    elements=graph.get_elements(graph.learning_path('comp 302', graph.dfs_tree))
-)
+
+def get_course_path_graph(show_prerequisite=False):
+    course_path_graph=cyto.Cytoscape(
+        id='course_path_graph',
+        layout={'name':'cose'},
+        style={
+            'width': '100%',
+            'height': '650px',
+        },
+        zoom= 1.2,
+        minZoom= 0.3,
+        maxZoom= 1.5,
+        stylesheet=course_path_stylesheet,
+        elements=graph.get_elements(graph.learning_path('comp 302', graph.dfs_tree, show_prerequisite))
+    )
+    return course_path_graph
 
 mini_map = cyto.Cytoscape(
     id='mini_map',
@@ -466,7 +470,10 @@ def choose_mode(current_type):
     #cur_subject, cur_course
     if current_type == 'overview':
         return subjects_dropdown_fade, True, False, overview_graph, minimap_content, False
-    return course_input_fade, False, True, course_path_graph, course_info_panel, True
+    elif current_type == 'course':
+        return course_input_fade, False, True, get_course_path_graph(show_prerequisite=False), course_info_panel, True
+    else: # current_type == "prerequisites"
+        return course_input_fade, False, True, get_course_path_graph(show_prerequisite=True), course_info_panel, True
 
 
 @app.callback(
@@ -489,7 +496,8 @@ def update_overview(subject):
     [
         Input('submit_button', 'n_clicks'), # user clicks 'GO'
         Input('course_input', 'n_submit'),   # user presss 'Enter'
-        Input('filter_list', 'value')
+        Input('filter_list', 'value'),
+        Input('radio_items', 'value') # Bind the radio button for view modes
     ],
     [
         State('course_input', 'value'),
@@ -497,12 +505,12 @@ def update_overview(subject):
         State('filter_list', 'options')
     ]
 )
-def update_course(n, sub, filters, course, cur_options):
+def update_course(n, sub, filters, view_mode, course, cur_options):
     ctx = dash.callback_context
     if ctx.triggered:
         latest_trigger_id = ctx.triggered[0]['prop_id'].split('.')[0]
         try:
-            new_graph = graph.learning_path(course, graph.dfs_tree)
+            new_graph = graph.learning_path(course, graph.dfs_tree, view_mode == "prerequisites")
             if latest_trigger_id == 'filter_list': # If filter value changes, we change the current graph without recalculating subjects
                 return graph.get_elements(new_graph, set(filters)), False, '', cur_options
             
