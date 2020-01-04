@@ -200,11 +200,11 @@ def get_prerequisite_graph(query_course_code):
                 dependency_graph.add_node(prerequisite)
 
             # Add an edge from the prerequisite to a course that leads to the query.
-            dependency_graph.add_edge(prerequisite, required_course)
             for super_prerequisite in list(BIG_GRAPH.predecessors(prerequisite)):
                 prerequisites_to_visit.append((prerequisite, super_prerequisite))
 
-    prerequisites.sort()
-    print(prerequisites)
+        # We are looking at a dependency graph, not a dependency tree.
+        # Hence, we shall add the dependency edge even if the more basic course was already on the graph.
+        dependency_graph.add_edge(prerequisite, required_course)
 
     return dependency_graph
