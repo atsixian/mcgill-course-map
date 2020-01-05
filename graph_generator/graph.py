@@ -167,34 +167,3 @@ def subjects_in_graph(G):
     for node in G.nodes:
         subjects.add(INFO_DICT[node]['subject'])
     return subjects
-
-
-def get_prerequisite_graph(query_course_code):
-    dependency_graph = nx.DiGraph()
-
-    dependency_graph.add_node(query_course_code)
-
-    prerequisites = list()
-
-    # A list of tuples in the form (course, prerequisite_of_the_course).
-    prerequisites_to_visit = list()
-    for prerequisite in list(BIG_GRAPH.predecessors(query_course_code)):
-        prerequisites_to_visit.append((query_course_code, prerequisite))
-
-    while len(prerequisites_to_visit) > 0:
-        required_course, prerequisite = prerequisites_to_visit.pop(-1)
-        if prerequisite not in prerequisites:
-            prerequisites.append(prerequisite)
-
-            if not dependency_graph.has_node(prerequisite):
-                dependency_graph.add_node(prerequisite)
-
-            # Add an edge from the prerequisite to a course that leads to the query.
-            for super_prerequisite in list(BIG_GRAPH.predecessors(prerequisite)):
-                prerequisites_to_visit.append((prerequisite, super_prerequisite))
-
-        # We are looking at a dependency graph, not a dependency tree.
-        # Hence, we shall add the dependency edge even if the more basic course was already on the graph.
-        dependency_graph.add_edge(prerequisite, required_course)
-
-    return dependency_graph
