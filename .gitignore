@@ -2,3 +2,7 @@
 .vscode/*
 *.json
 __pycache__/
+Application/
+venv/
+.idea/
+.python-version
