@@ -5,3 +5,4 @@ __pycache__/
 Application/
 venv/
 .idea/
+.python-version
