@@ -15,21 +15,21 @@ all_courses = currentdir.joinpath('all_courses.jl')
 
 
 def replace_symbol(lst):
-        return [s.replace('-', '\n') for s in lst]
+    return [s.replace('-', '\n') for s in lst]
 
 
 def generate_values(f, key, course_list):
 
     result = []
-    
-    # If there's no prereq, return None because we want a 1-1 pair between names and prereqs
-    temp = [ f(c.get(key, [])) for c in course_list ]
 
-    if key=='name': # If it's for full names, we don't do anything, just take out the data
+    # If there's no prereq, return None because we want a 1-1 pair between names and prereqs
+    temp = [f(c.get(key, [])) for c in course_list]
+
+    if key == 'name':  # If it's for full names, we don't do anything, just take out the data
         return temp
 
     # prereqs are lists, so I use this to identify prereqs
-    if temp and isinstance(temp[0], list): 
+    if temp and isinstance(temp[0], list):
         for l in temp:
             result.append(replace_symbol(l))
     else:
@@ -46,30 +46,29 @@ def generate_graph(subject):
 
     nodes = [ (code, {'fullname': course_name}) for (code, course_name) in zip(course_codes, course_names) ]
 
-    # Replace spaces '-' in preq course names with "\n" because 
+    # Replace spaces '-' in preq course names with "\n" because
     preqs = generate_values(lambda x: x, 'prereq', subject)
 
     # Create edges
     edges = []
 
     for c, plist in zip(course_codes, preqs):
-        if plist: # if there's any prereq, create an edge 
+        if plist: # if there's any prereq, create an edge
             [edges.append((c, p)) for p in plist]
 
     # Create the complete graph
     G = nx.DiGraph()
     G.add_nodes_from(nodes)
     G.add_edges_from(edges)
-    G = G.reverse()
-    return G, course_codes
+    return G.reverse(), course_codes, G
 
 
 # Create a graph for every subject, store them in a dictionary
 GRAPH_DICT = {}
 
-# A dictionary for all courses, format like 
+# A dictionary for all courses, format like
 # {
-#   'comp202':{'fullname': 'foundations...', 'term': 'xxx', 'link': xxx,}, 
+#   'comp202':{'fullname': 'foundations...', 'term': 'xxx', 'link': xxx,},
 #   'math223': {...(same)}
 # }
 INFO_DICT = {}
@@ -78,7 +77,7 @@ for f in files:
     with jsonlines.open(f) as reader:
         course_info = list(reader.iter(type=dict))
         key = Path(f).stem
-        GRAPH_DICT[key], codes = generate_graph(course_info)
+        GRAPH_DICT[key], codes, _ = generate_graph(course_info)
         for d in course_info:
             # del d['subject']
             d.pop('prereq', None)
@@ -87,7 +86,8 @@ for f in files:
 
 with jsonlines.open(all_courses) as reader:
     course_info = list(reader.iter(type=dict))
-    BIG_GRAPH = generate_graph(course_info)[0]
+    BIG_GRAPH, _, PREQ_GRAPH = generate_graph(course_info)
+
 
 def split_course_name(course):
     code_pattern = re.compile('[a-z]{3}\w{1}', re.IGNORECASE)
@@ -95,8 +95,8 @@ def split_course_name(course):
     code = code_pattern.search(course)
     number = num_pattern.search(course)
     if code == None or number == None:
-       raise ValueError(
-           'Invalid input, please follow "subject number" pattern like "COMP 202"(lowercase also works).')
+        raise ValueError(
+            'Invalid input, please follow "subject number" pattern like "COMP 202"(lowercase also works).')
     code = code.group(0)
     number = number.group(0)
     return code, number
@@ -122,7 +122,7 @@ def get_elements(G, filters=None, include_depth=True):
     edges = G.edges()
 
     # Filter out courses that are from subjects in filters
-    # ! Why use != None instead of 
+    # ! Why use != None instead of
     # if filters:
     # ! Because set(), the empty set will be evaluated to False, but we still want to filter items
     if filters != None:
@@ -199,26 +199,16 @@ def calculate_depth(graph):
 # Define a partial bfs with depth_limit=1, so we can reuse the learning_path function
 bfs_tree = partial(nx.bfs_tree, G=BIG_GRAPH, depth_limit=1)
 dfs_tree = partial(nx.dfs_tree, G=BIG_GRAPH)
+preq_tree = partial(nx.dfs_tree, G=PREQ_GRAPH)
 
 
-# def learning_path(course, search_method, filters=None):
-#     code, number = split_course_name(course)
-#     try:
-#         path = search_method(source=code.lower() + '\n' + number)
-        
-#         return get_elements(path, filters)
-#     except KeyError as e:
-#         raise KeyError(
-#             f"There's no course called {course}.") from e
-
-def learning_path(course, search_method, show_prerequisites=False):
+def learning_path(course, search_method):
     code, number = split_course_name(course)
     try:
-        if not show_prerequisites:
-            path = search_method(source=code.lower() + '\n' + number)
-            return path
-        else:
-            return get_prerequisite_graph(code.lower() + '\n' + number)
+        path = search_method(source=code.lower() + '\n' + number)
+        if search_method == preq_tree:  # return the prereq tree
+            return path.reverse()  # To show the correct arrow direction
+        return path
     except KeyError as e:
         raise KeyError(
             f"There's no course called {course}.") from e
@@ -232,34 +222,3 @@ def subjects_in_graph(G):
     for node in G.nodes:
         subjects.add(INFO_DICT[node]['subject'])
     return subjects
-
-
-def get_prerequisite_graph(query_course_code):
-    dependency_graph = nx.DiGraph()
-
-    dependency_graph.add_node(query_course_code)
-
-    prerequisites = list()
-
-    # A list of tuples in the form (course, prerequisite_of_the_course).
-    prerequisites_to_visit = list()
-    for prerequisite in list(BIG_GRAPH.predecessors(query_course_code)):
-        prerequisites_to_visit.append((query_course_code, prerequisite))
-
-    while len(prerequisites_to_visit) > 0:
-        required_course, prerequisite = prerequisites_to_visit.pop(-1)
-        if prerequisite not in prerequisites:
-            prerequisites.append(prerequisite)
-
-            if not dependency_graph.has_node(prerequisite):
-                dependency_graph.add_node(prerequisite)
-
-            # Add an edge from the prerequisite to a course that leads to the query.
-            for super_prerequisite in list(BIG_GRAPH.predecessors(prerequisite)):
-                prerequisites_to_visit.append((prerequisite, super_prerequisite))
-
-        # We are looking at a dependency graph, not a dependency tree.
-        # Hence, we shall add the dependency edge even if the more basic course was already on the graph.
-        dependency_graph.add_edge(prerequisite, required_course)
-
-    return dependency_graph
