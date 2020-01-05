@@ -11,7 +11,8 @@ import dash
 from dash.dependencies import Input, Output, State
 import re
 import csv
-
+from SecretColors import Palette
+from copy import deepcopy
 
 app = dash.Dash(__name__, external_stylesheets=[
                 dbc.themes.CYBORG, "https://use.fontawesome.com/releases/v5.7.0/css/all.css"])
@@ -144,6 +145,7 @@ course_input_fade = dbc.Fade(
 # Stylesheets for Cytoscape graphs
 overview_stylesheet = [
     {
+        # Group selectors
         'selector': 'node',
         'style': {
             'width': '30px',
@@ -172,6 +174,36 @@ overview_stylesheet = [
         }
     },
 ]
+
+
+def get_color_coded_style_sheet(max_depth=1):
+    output = deepcopy(overview_stylesheet)
+
+    class_selector_template = {
+        'selector': '.depth_0',  # Depth of nodes that shall apply this color selector.
+        'style': {
+            'background-color': '#000000',  # Color in Hex
+            'line-color': '#000000'
+        }
+    }
+
+    color_palette = Palette("material")
+    first_color_hex = color_palette.green()
+    second_color_hex = color_palette.purple()
+
+    # Generate a random list of gradient colors in Hex
+    colors = color_palette.color_between(first_color_hex, second_color_hex, max_depth + 1)
+
+    # colors = color_palette.random(max_depth + 2)
+
+    for depth in range(max_depth + 1):
+        class_selector = deepcopy(class_selector_template)
+        class_selector['selector'] = '.depth_' + str(depth)
+        class_selector['style']['background-color'] = colors[depth]
+        class_selector['style']['line-color'] = colors[depth]
+        output.append(class_selector)
+
+    return output
 
 
 course_path_stylesheet = [
@@ -246,12 +278,15 @@ overview_graph = cyto.Cytoscape(
         'height': '650px',
         },
     maxZoom=1.5,
-    stylesheet=overview_stylesheet,
+    stylesheet=get_color_coded_style_sheet(),
     elements=graph.big_picture('comp')
 )
 
 
 def get_course_path_graph(show_prerequisite=False):
+    elements = \
+        graph.get_elements(graph.learning_path('comp 302', graph.dfs_tree, show_prerequisite), include_depth=True)
+
     course_path_graph=cyto.Cytoscape(
         id='course_path_graph',
         layout={'name':'cose'},
@@ -262,8 +297,8 @@ def get_course_path_graph(show_prerequisite=False):
         zoom= 1.2,
         minZoom= 0.3,
         maxZoom= 1.5,
-        stylesheet=course_path_stylesheet,
-        elements=graph.get_elements(graph.learning_path('comp 302', graph.dfs_tree, show_prerequisite))
+        stylesheet=get_color_coded_style_sheet(5),
+        elements=elements
     )
     return course_path_graph
 

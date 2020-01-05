@@ -113,8 +113,8 @@ def get_graph(graph_type, key):
         return G
 
 
-def get_elements(G, filters=None):
-
+def get_elements(G, filters=None, include_depth=True):
+    max_depth = 0
     def in_filter(key):
         return INFO_DICT[key]['subject'] not in filters
 
@@ -129,17 +129,72 @@ def get_elements(G, filters=None):
         nodes = list(filter(in_filter, nodes))
         edges = G.edges(nodes)
 
-    ns = [
-        {
-            'data': {'id': name, 'label': name}
-        } for name in nodes
-    ]
+    if not include_depth:
+        ns = [
+            {
+                'data': {'id': name, 'label': name}
+            } for name in nodes
+        ]
+    else:
+        depth_dictionary, max_depth = calculate_depth(G)
+        ns = [
+            {
+                'data': {'id': name, 'label': name},
+                'classes': 'depth_' + str(depth_dictionary[name])
+            } for name in nodes
+        ]
+
     es = [
         {
             'data': {'source': src, 'target': tar}
         } for (src, tar) in edges
     ]
+
     return ns+es
+
+# This function shall return a tuple:
+# First element: a dictionary from nodes to depths
+# Second element: an integer that gives the maximum depth in this graph.
+def calculate_depth(graph):
+    nodes = graph.nodes()
+    depth_dictionary = dict()
+    max_depth = 0
+
+    # Start by assuming that all nodes are leaves. Hence the initial depth of zero.
+    for node in nodes:
+        depth_dictionary[node] = 0
+
+    # Step one: find all the leaves in this graph.
+    # We call a node a "leaf" if and only if that node has no prerequisite.
+    # Assuming that NetworkX keeps an adjacency matrix of the edges, the time complexity of this step shall be O(N + E).
+    leaves = list(filter(lambda node: len(list(graph.predecessors(node))) == 0, nodes))
+
+    # Step two: For each leaf, perform a BFS and assign depth to each node.
+    # Update the depth of a node if the current depth is greater than the previous one.
+    # The time complexity of this step shall be O(L * N), where L is the number of leaves and N is the number of nodes.
+    for leaf in leaves:
+        # To make depth calculations easier, keep track of the parent of each node.
+        # Consider using a queue for (potentially) better performance.
+        # Elements of this list are tuples in the form (node, child_node).
+        nodes_to_visit = list()
+        for child in graph.successors(leaf):
+            nodes_to_visit.append((leaf, child))
+
+        # Assumption: this graph is acyclic (i.e., it does not contain any cycle.)
+        # If the program gets into an infinite loop here, talk to your school's administration.
+        while len(nodes_to_visit) > 0:
+            current_node, node_to_visit = nodes_to_visit.pop(0)
+
+            depth_dictionary[node_to_visit] = \
+                max([depth_dictionary[current_node] + 1, depth_dictionary[node_to_visit]])
+
+            for child in graph.successors(node_to_visit):
+                nodes_to_visit.append((node_to_visit, child))
+
+            max_depth = max(max_depth, depth_dictionary[current_node] + 1)
+
+    return depth_dictionary, max_depth
+
 
 # Define a partial bfs with depth_limit=1, so we can reuse the learning_path function
 bfs_tree = partial(nx.bfs_tree, G=BIG_GRAPH, depth_limit=1)
