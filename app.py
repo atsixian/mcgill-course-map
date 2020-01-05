@@ -1,5 +1,6 @@
 from pathlib import Path
 from graph_generator import graph
+from datetime import date
 
 import networkx as nx
 import plotly.graph_objs as go
@@ -41,6 +42,7 @@ radioitems = dbc.FormGroup(
             id='radio_items',
             options=[
                 {'label': 'Path by course', 'value': 'course'},
+                {'label': 'Prerequisites', 'value': 'preq'},
                 {'label': 'Overview by subject', 'value': 'overview'},
             ],
             value='course',
@@ -241,27 +243,32 @@ overview_graph = cyto.Cytoscape(
     # layout={'name':'concentric', 'mindNodeSpacing':15, 'spacingFactor':0.25, 'equidistant':True},
     layout={'name':'circle'},
     style={
-        'width': '100%', 
+        'width': '100%',
         'height': '650px',
-        },
+    },
     maxZoom=1.5,
     stylesheet=overview_stylesheet,
     elements=graph.big_picture('comp')
 )
 
-course_path_graph=cyto.Cytoscape(
-    id='course_path_graph',
-    layout={'name':'cose'},
-    style={
-        'width': '100%',
-        'height': '650px',
-    },
-    zoom= 1.2,
-    minZoom= 0.3,
-    maxZoom= 1.5,
-    stylesheet=course_path_stylesheet,
-    elements=graph.get_elements(graph.learning_path('comp 302', graph.dfs_tree))
-)
+
+def get_course_path_graph(show_preq=False):
+    course_path_graph = cyto.Cytoscape(
+        id='course_path_graph',
+        layout={'name':'cose'},
+        style={
+            'width': '100%',
+            'height': '650px',
+        },
+        zoom= 1.2,
+        minZoom= 0.3,
+        maxZoom= 1.5,
+        stylesheet=course_path_stylesheet,
+        # If we're asking for the preq graph, use graph.preq_tree instead of graph.dfs_tree
+        elements=graph.get_elements(graph.learning_path(
+            'comp 302', (graph.preq_tree if show_preq else graph.dfs_tree)))
+    )
+    return course_path_graph
 
 mini_map = cyto.Cytoscape(
     id='mini_map',
@@ -305,7 +312,7 @@ issueslink = html.A(" Issues", href="https://github.com/Deerhound579/mcgill-cour
 minimap_content = [
     dbc.CardHeader(html.A('COMP 202 Foundations of Programming (3 credits)', id='minimap_header',
                           href='https://www.mcgill.ca/study/2019-2020/courses/comp-202', style={'color': 'white'}, target='_blank'),
-                          ),
+                   ),
     dbc.CardBody(
         [
             mini_map
@@ -319,16 +326,6 @@ course_info_panel=[
     dbc.CardHeader(html.A([external_icon, course_info],target='_blank', id='course_info_title', href='https://www.mcgill.ca/study/2019-2020/courses/comp-302', style={'color': 'white'})),
     dbc.CardBody("Fall 2018, Winter 2019", id='course_info_body')
 ]
-
-# filter_dropdown = dcc.Dropdown(
-#     options=[
-#         {"label": "COMP", "value": 'COMP'},
-#         {"label": "ECSE", "value": 'ECSE'},
-#     ],
-#     multi=True,
-#     value=[],
-#     id='filter_list',
-# )
 
 filter_body = dbc.CardBody(
     dcc.Dropdown(
@@ -367,7 +364,7 @@ filters_layouts = dbc.Card(
                 card=True,
                 style={'color': '#FF8800'},
             )
-            ],
+        ],
             id='filter_header'),
     ],
     color='warning',
@@ -392,7 +389,7 @@ navbar = dbc.NavbarSimple(
         message_display,
         message_display1,
         message_display2,
-        dbc.NavLink("© 2019 Sixian Li", href="mailto:lisixian579@gmail.com", style={
+        dbc.NavLink(f"© {date.today().year} Sixian Li", href="mailto:lisixian579@gmail.com", style={
                     'color': 'black'}),
         dbc.NavLink([html.I(className='fab fa-github'), starlink],
                     style={'color': 'black'}),
@@ -422,8 +419,10 @@ body = dbc.Container(
                     [
                         html.Hr(),
                         radioitems,
-                        html.Div(children=[course_input_fade], id='display_current_mode'),
-                        dbc.Card(id='left_corner_display', color="warning", outline=True),
+                        html.Div(children=[course_input_fade],
+                                 id='display_current_mode'),
+                        dbc.Card(id='left_corner_display',
+                                 color="warning", outline=True),
                         html.Hr(),
                         # course_input_fade,
                         filters_fade_card,
@@ -466,7 +465,10 @@ def choose_mode(current_type):
     #cur_subject, cur_course
     if current_type == 'overview':
         return subjects_dropdown_fade, True, False, overview_graph, minimap_content, False
-    return course_input_fade, False, True, course_path_graph, course_info_panel, True
+    elif current_type == 'course':
+        return course_input_fade, False, True, get_course_path_graph(), course_info_panel, True
+    # else, show preq
+    return course_input_fade, False, True, get_course_path_graph(True), course_info_panel, True
 
 
 @app.callback(
@@ -493,19 +495,22 @@ def update_overview(subject):
     ],
     [
         State('course_input', 'value'),
-        # State('course_path_graph', 'elements'),
-        State('filter_list', 'options')
+        State('filter_list', 'options'),
+        State('radio_items', 'value')
     ]
 )
-def update_course(n, sub, filters, course, cur_options):
+def update_course(n, sub, filters, course, cur_options, cur_type):
     ctx = dash.callback_context
     if ctx.triggered:
         latest_trigger_id = ctx.triggered[0]['prop_id'].split('.')[0]
         try:
-            new_graph = graph.learning_path(course, graph.dfs_tree)
-            if latest_trigger_id == 'filter_list': # If filter value changes, we change the current graph without recalculating subjects
+
+            new_graph = graph.learning_path(
+                course, (graph.preq_tree if cur_type == 'preq' else graph.dfs_tree))
+            # If filter value changes, we change the current graph without recalculating subjects
+            if latest_trigger_id == 'filter_list':
                 return graph.get_elements(new_graph, set(filters)), False, '', cur_options
-            
+
             new_subjects = graph.subjects_in_graph(new_graph)
             options_list = [{'label': sub, 'value': sub} for sub in new_subjects]
 
