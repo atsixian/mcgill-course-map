@@ -41,13 +41,8 @@ radioitems = dbc.FormGroup(
         dbc.RadioItems(
             id='radio_items',
             options=[
-<<<<<<< HEAD
-                {'label': 'What you can take after taking this course', 'value': 'course'},
-                {'label': 'Prerequisites that you need for this course', 'value': 'prerequisites'},
-=======
-                {'label': 'Path by course', 'value': 'course'},
+                {'label': 'Path you unlock', 'value': 'course'},
                 {'label': 'Prerequisites', 'value': 'preq'},
->>>>>>> dev
                 {'label': 'Overview by subject', 'value': 'overview'},
             ],
             value='course',
@@ -497,7 +492,6 @@ def update_overview(subject):
         Input('submit_button', 'n_clicks'), # user clicks 'GO'
         Input('course_input', 'n_submit'),   # user presss 'Enter'
         Input('filter_list', 'value'),
-        Input('radio_items', 'value') # Bind the radio button for view modes
     ],
     [
         State('course_input', 'value'),
