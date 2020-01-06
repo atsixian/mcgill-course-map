@@ -36,6 +36,7 @@ files = [ Path.joinpath(CURRENT_PATH, f) for f in filenames]
 infos = graph.INFO_DICT
 
 
+
 radioitems = dbc.FormGroup(
     [
         dbc.RadioItems(
@@ -252,7 +253,7 @@ overview_graph = cyto.Cytoscape(
 )
 
 
-def get_course_path_graph(show_preq=False):
+def get_course_path_graph(show_preq=False, course='comp 302'):
     course_path_graph = cyto.Cytoscape(
         id='course_path_graph',
         layout={'name':'cose'},
@@ -266,7 +267,7 @@ def get_course_path_graph(show_preq=False):
         stylesheet=course_path_stylesheet,
         # If we're asking for the preq graph, use graph.preq_tree instead of graph.dfs_tree
         elements=graph.get_elements(graph.learning_path(
-            'comp 302', (graph.preq_tree if show_preq else graph.dfs_tree)))
+            course, (graph.preq_tree if show_preq else graph.dfs_tree)))
     )
     return course_path_graph
 
@@ -442,8 +443,10 @@ body = dbc.Container(
     className="md-12",
 )
 
+info_div = html.Div(['comp 302'], id='input_couse', style={'display': 'none'})
+
 app.title = 'McGill Course Map'
-app.layout = html.Div([navbar, body])
+app.layout = html.Div([navbar, body, info_div])
 error_message = "Please double check.\nIf you're sure it exists, or you've found an invalid course, create an issue on GitHub or contact me by email(click my name on the navigation bar)."
 
 
@@ -459,16 +462,17 @@ error_message = "Please double check.\nIf you're sure it exists, or you've found
     ],
     [
         Input('radio_items', 'value'),
+        Input('input_couse', 'children')
     ],
 )
-def choose_mode(current_type):
+def choose_mode(current_type, course):
     #cur_subject, cur_course
     if current_type == 'overview':
         return subjects_dropdown_fade, True, False, overview_graph, minimap_content, False
     elif current_type == 'course':
-        return course_input_fade, False, True, get_course_path_graph(), course_info_panel, True
+        return course_input_fade, False, True, get_course_path_graph(show_preq=False, course=str(course)), course_info_panel, True
     # else, show preq
-    return course_input_fade, False, True, get_course_path_graph(True), course_info_panel, True
+    return course_input_fade, False, True, get_course_path_graph(show_preq=True, course=str(course)), course_info_panel, True
 
 
 @app.callback(
@@ -487,6 +491,7 @@ def update_overview(subject):
         Output('message', 'is_open'),
         Output('message_body', 'children'),
         Output('filter_list', 'options'),
+        Output('input_couse', 'children')
     ],
     [
         Input('submit_button', 'n_clicks'), # user clicks 'GO'
@@ -509,14 +514,14 @@ def update_course(n, sub, filters, course, cur_options, cur_type):
                 course, (graph.preq_tree if cur_type == 'preq' else graph.dfs_tree))
             # If filter value changes, we change the current graph without recalculating subjects
             if latest_trigger_id == 'filter_list':
-                return graph.get_elements(new_graph, set(filters)), False, '', cur_options
+                return graph.get_elements(new_graph, set(filters)), False, '', cur_options, course
 
             new_subjects = graph.subjects_in_graph(new_graph)
             options_list = [{'label': sub, 'value': sub} for sub in new_subjects]
 
-            return graph.get_elements(new_graph), False, ' ', options_list
+            return graph.get_elements(new_graph), False, ' ', options_list, course
         except Exception as e:
-            return [], True, f"There's no course called {course}. "+error_message, cur_options
+            return [], True, f"There's no course called {course}. "+error_message, cur_options, course
 
 
 @app.callback(
