@@ -1,5 +1,6 @@
 from pathlib import Path
 from graph_generator import graph
+from datetime import date
 
 import networkx as nx
 import plotly.graph_objs as go
@@ -392,7 +393,7 @@ navbar = dbc.NavbarSimple(
         message_display,
         message_display1,
         message_display2,
-        dbc.NavLink("© 2019 Sixian Li", href="mailto:lisixian579@gmail.com", style={
+        dbc.NavLink(f"© {date.today().year} Sixian Li", href="mailto:lisixian579@gmail.com", style={
                     'color': 'black'}),
         dbc.NavLink([html.I(className='fab fa-github'), starlink],
                     style={'color': 'black'}),
