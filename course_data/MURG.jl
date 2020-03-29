@@ -1,2 +1,2 @@
-{"name": "MURG 474 Special Project: Music Research 2 (2 credits)", "term": "This course is not scheduled for the 2019-2020 academic year.", "link": "https://mcgill.ca/study/2019-2020/courses/murg-474", "subject": "MURG"}
-{"name": "MURG 473 Special Project: Music Research 1 (1 credit)", "term": "This course is not scheduled for the 2019-2020 academic year.", "link": "https://mcgill.ca/study/2019-2020/courses/murg-473", "subject": "MURG"}
+{"name": "MURG 474 Special Project: Music Research 2 (2 credits)", "term": "This course is not scheduled for the 2020-2021 academic year.", "link": "https://mcgill.ca/study/2020-2021/courses/murg-474", "subject": "MURG"}
+{"name": "MURG 473 Special Project: Music Research 1 (1 credit)", "term": "This course is not scheduled for the 2020-2021 academic year.", "link": "https://mcgill.ca/study/2020-2021/courses/murg-473", "subject": "MURG"}

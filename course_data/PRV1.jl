@@ -1,3 +1,3 @@
-{"name": "PRV1 144D2 Civil Law Property (2.5 credits)", "prereq": ["prv1-144d1"], "term": "This course is not scheduled for the 2019-2020 academic year.", "link": "https://mcgill.ca/study/2019-2020/courses/prv1-144d2", "subject": "PRV1"}
-{"name": "PRV1 144D1 Civil Law Property (2.5 credits)", "term": "This course is not scheduled for the 2019-2020 academic year.", "link": "https://mcgill.ca/study/2019-2020/courses/prv1-144d1", "subject": "PRV1"}
-{"name": "PRV1 144 Civil Law Property (5 credits)", "term": "This course is not scheduled for the 2019-2020 academic year.", "link": "https://mcgill.ca/study/2019-2020/courses/prv1-144", "subject": "PRV1"}
+{"name": "PRV1 144D2 Civil Law Property (2.5 credits)", "prereq": ["prv1-144d1"], "term": "This course is not scheduled for the 2020-2021 academic year.", "link": "https://mcgill.ca/study/2020-2021/courses/prv1-144d2", "subject": "PRV1"}
+{"name": "PRV1 144D1 Civil Law Property (2.5 credits)", "term": "This course is not scheduled for the 2020-2021 academic year.", "link": "https://mcgill.ca/study/2020-2021/courses/prv1-144d1", "subject": "PRV1"}
+{"name": "PRV1 144 Civil Law Property (5 credits)", "term": "This course is not scheduled for the 2020-2021 academic year.", "link": "https://mcgill.ca/study/2020-2021/courses/prv1-144", "subject": "PRV1"}

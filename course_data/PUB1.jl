@@ -1,1 +1,1 @@
-{"name": "PUB1 004 Land Use Planning (3 credits)", "term": "This course is not scheduled for the 2019-2020 academic year.", "link": "https://mcgill.ca/study/2019-2020/courses/pub1-004", "subject": "PUB1"}
+{"name": "PUB1 004 Land Use Planning (3 credits)", "term": "This course is not scheduled for the 2020-2021 academic year.", "link": "https://mcgill.ca/study/2020-2021/courses/pub1-004", "subject": "PUB1"}

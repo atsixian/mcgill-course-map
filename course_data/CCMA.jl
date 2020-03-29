@@ -1,3 +1,3 @@
-{"name": "CCMA 522 Managerial Accounting 2 (3 credits)", "prereq": ["ccma-511"], "term": "Fall 2019", "link": "https://mcgill.ca/study/2019-2020/courses/ccma-522", "subject": "CCMA"}
-{"name": "CCMA 523 Managerial Accounting 3 (3 credits)", "prereq": ["ccma-522"], "term": "This course is not scheduled for the 2019-2020 academic year.", "link": "https://mcgill.ca/study/2019-2020/courses/ccma-523", "subject": "CCMA"}
-{"name": "CCMA 511 Managerial Accounting 1 (3 credits)", "prereq": ["ccfc-511"], "term": "Fall 2019", "link": "https://mcgill.ca/study/2019-2020/courses/ccma-511", "subject": "CCMA"}
+{"name": "CCMA 523 Managerial Accounting 3 (3 credits)", "prereq": ["ccma-522"], "term": "This course is not scheduled for the 2020-2021 academic year.", "link": "https://mcgill.ca/study/2020-2021/courses/ccma-523", "subject": "CCMA"}
+{"name": "CCMA 522 Managerial Accounting 2 (3 credits)", "prereq": ["ccma-511"], "term": "Fall 2020", "link": "https://mcgill.ca/study/2020-2021/courses/ccma-522", "subject": "CCMA"}
+{"name": "CCMA 511 Managerial Accounting 1 (3 credits)", "prereq": ["ccfc-511"], "term": "Fall 2020", "link": "https://mcgill.ca/study/2020-2021/courses/ccma-511", "subject": "CCMA"}
