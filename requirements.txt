@@ -1,5 +1,5 @@
 Click==7.0
-dash==1.6.1
+dash==1.9.1
 dash-bootstrap-components==0.7.2
 dash-core-components==1.5.1
 dash-cytoscape==0.0.5

@@ -57,6 +57,14 @@ Author, link to the GitHub page, link to the GitHub issues page, and the detaile
 3. `pip install -r requirements.txt` installs all dependencies
 4. `python app.py`
 
+### How to run the spider
+
+If you want to run the spider, you need to install dev dependencies by 
+
+`pip install -r dev-requirements.txt`
+
+In the project root directory, run `scrapy crawl courses`. All output data will be stored in `course_data` folder.
+
 ### License
 
 Copyright © Sixian Li. 
@@ -64,4 +72,3 @@ Copyright © Sixian Li.
 McGill is a University in Montreal and has no affiliation with this software.
 
 This software is under GNU General Public License v3.0. More info can be found in the [LICENSE](<https://github.com/Deerhound579/mcgill-course-map/blob/master/LICENSE>) file.
-
