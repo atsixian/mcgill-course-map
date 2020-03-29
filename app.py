@@ -318,7 +318,7 @@ external_icon = html.I(className="fas fa-external-link-alt", style={})
 course_info = html.A("COMP 302 Programming Languages and Paradigms (3 credits)")
 course_info_panel=[
     dbc.CardHeader(html.A([external_icon, course_info],target='_blank', id='course_info_title', href='https://www.mcgill.ca/study/2019-2020/courses/comp-302', style={'color': 'white'})),
-    dbc.CardBody("Fall 2018, Winter 2019", id='course_info_body')
+    dbc.CardBody(graph.get_term(), id='course_info_body')
 ]
 
 # filter_dropdown = dcc.Dropdown(

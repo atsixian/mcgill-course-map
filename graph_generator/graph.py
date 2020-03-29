@@ -48,13 +48,14 @@ def generate_graph(subject):
 
     # Replace spaces '-' in preq course names with "\n" because 
     preqs = generate_values(lambda x: x, 'prereq', subject)
-
     # Create edges
     edges = []
 
+    # Remove invalid courses
+    # i.e. those that are in preqs but are removed by the school
     for c, plist in zip(course_codes, preqs):
         if plist: # if there's any prereq, create an edge 
-            [edges.append((c, p)) for p in plist]
+            [edges.append((c, p)) for p in plist if p in INFO_DICT]
 
     # Create the complete graph
     G = nx.DiGraph()
@@ -64,7 +65,7 @@ def generate_graph(subject):
     return G, course_codes
 
 
-# Create a graph for every subject, store them in a dictionary
+# Create a graph for every SUBJECT like COMP, store them in a dictionary
 GRAPH_DICT = {}
 
 # A dictionary for all courses, format like 
@@ -174,3 +175,6 @@ def subjects_in_graph(G):
     for node in G.nodes:
         subjects.add(INFO_DICT[node]['subject'])
     return subjects
+
+def get_term():
+    return INFO_DICT['comp\n302']['term']
