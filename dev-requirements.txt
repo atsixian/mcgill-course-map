@@ -27,7 +27,7 @@ incremental==17.5.0
 itsdangerous==1.1.0
 Jinja2==2.10.3
 jsonlines==1.2.0
-lxml==4.5.0
+lxml==4.6.5
 MarkupSafe==1.1.1
 networkx==2.4
 parsel==1.5.2
