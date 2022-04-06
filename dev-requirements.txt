@@ -46,7 +46,7 @@ Scrapy==2.0.1
 service-identity==18.1.0
 six==1.13.0
 soupsieve==2.0
-Twisted==20.3.0
+Twisted==22.2.0
 urllib3==1.25.8
 w3lib==1.21.0
 Werkzeug==0.16.0
